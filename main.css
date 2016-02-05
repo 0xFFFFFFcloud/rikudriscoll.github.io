@@ -5,7 +5,7 @@ html, body {
 
 #initial{
 
-	background-image: url(.gitignore/images/rikuKanji.png);
+	background-image: url(images/rikuKanji.png);
 	background-size: cover; 
 	bottom: 2%;
 	height: 20px;
@@ -40,7 +40,7 @@ html, body {
 	#nameLogo{
 
 		margin: 0;
-		background-image: url(.gitignore/images/nameLogo2.png);
+		background-image: url(images/nameLogo2.png);
 		height: 55px; 
 		width: 40px; 
 		left: 1.5%;
@@ -53,7 +53,7 @@ html, body {
 
 	#signature{
 
-		background-image: url(.gitignore/images/signature_min.png);
+		background-image: url(images/signature_min.png);
 		background-size: cover; 
 		height: 120px; 
 		width: 200px; 
@@ -103,7 +103,7 @@ html, body {
 
 #mainSection{
 
-	background-image: url(.gitignore/images/sunset.png);
+	background-image: url(images/sunset.png);
 	background-repeat: no-repeat;
 	background-position: center; 
 	background-size: cover; 
@@ -199,7 +199,7 @@ html, body {
 
 #londonBg{
 
-	background-image: url(.gitignore/images/doubledeck.png);
+	background-image: url(images/doubledeck.png);
 	height: 365px; 
 	width: 100%; 
 	background-size: cover; 
@@ -217,7 +217,7 @@ html, body {
 
 		#portrait{
 
-			background-image: url(.gitignore/images/portrait.png);
+			background-image: url(images/portrait.png);
 			background-size: cover; 
 			height: 135px;
 			width: 135px; 

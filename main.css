@@ -3,33 +3,106 @@ html, body {
 	margin: 0; 
 }
 
-#wrapper{
-	width: 100%; 
-	height: 100%; 
+#initial{
+
+	background-image: url(.gitignore/images/rikuKanji.png);
+	background-size: cover; 
+	bottom: 2%;
+	height: 20px;
+	position: fixed; 
+	right: 1.5%;
+	width: 20px;
+	z-index: 50px; 
+	
 }
 
 
+#wrapper{
+
+	width: 100%; 
+	height: 100%;
+
+}
+
+
+
 #menuContainer{
+
 	position: fixed;
 	height: 60px; 
 	width: 100%; 
 	background-color:rgba(22, 22, 31, 0.7);
-	border-bottom: 3px solid grey; 
+	border-bottom: 3px solid grey;
+	z-index: 1000;
 	
 }
 
-#nameLogo{
-	margin: 0;
-	background-image: url(.gitignore/images/nameLogo2.png);
-	height: 100px; 
-	width: 75px; 
-	position: relative;
-	top: 90px;
-	left: 50px;
-	background-size: cover; 
-	z-index: 100;
+	#nameLogo{
+
+		margin: 0;
+		background-image: url(.gitignore/images/nameLogo2.png);
+		height: 55px; 
+		width: 40px; 
+		left: 1.5%;
+		top: 5%;
+		position: relative;
+		background-size: cover; 
+		float: left;
+
 }
+
+	#signature{
+
+		background-image: url(.gitignore/images/signature_min.png);
+		background-size: cover; 
+		height: 120px; 
+		width: 200px; 
+		margin: -13px;
+		padding: 0;
+		left: 3%;
+		float: left; 
+		position: relative;
+
+	}
+
+		#menuOptions{
+
+			font-size: 0.9em;
+			list-style: none;
+			position: relative;
+			float: right; 
+			right: 1.5%;
+			top: 24px;
+
+		}
+
+		.listItem{
+
+			float: left; 
+			font-family: 'Lato', sans-serif;
+			font-weight: bold;
+			letter-spacing: 2px; 
+			margin: 0;
+			padding: 0;
+			padding-right: 30px;
+
+		}
+
+			#contactButton{
+
+				padding-right: 0;
+
+			}
+
+				.menuButtons{
+
+					text-decoration: none; 
+					color: #FFFFF0;
+
+				}
+
 #mainSection{
+
 	background-image: url(.gitignore/images/sunset.png);
 	background-repeat: no-repeat;
 	background-position: center; 
@@ -38,16 +111,148 @@ html, body {
 	width: 100%; 
 	position: relative;
 	z-index: -1;
+
 }
 
-	#title{
+	#welcomeSign{
+
 		position: relative; 
-		height: 20px;
-		width: 120px;
-		top: 100px;
-		letter-spacing:20px; 
-		font-size:100px; 
+		height: auto;
+		width: 560px;
+		top: 150px;
+		padding: 0; 
+		margin: 0 auto;
+		letter-spacing:20px;  
 		font-family: 'Raleway', sans-serif;
+		font-size: 3em;
 		color: 	#FFFFFF ;
+
 	}
+
+	#greetContent{
+		position: relative; 
+		height: 92px;
+		width: 560px;
+		top: 145px;
+		padding: 0; 
+		padding-left: 20px;
+		padding-top: 20px;
+		letter-spacing:15px;  
+		font-family: 'Raleway', sans-serif;
+		font-size: 3em;
+		color: 	#FFFFFF;
+		display: none;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+		#myName{
+
+			text-align: center;
+
+		}
+
+	#introContent{
+		width: 350px;
+		margin: 0 auto;
+		position: relative; 
+		top: 160px;
+		letter-spacing: 4px;
+		color: navy;
+		font-family: 'Lato', sans-serif;
+
+	}
+
+		.descriptionContent{
+			text-align: center;
+		}
+
+
+#symbolContainer{
+	position: relative; 
+	height: 50px;
+	width: 340px;
+	top: 200px;
+	padding: 0;
+	margin: 0 auto;
+	
+}
+	.icon-newspaper, .icon-linkedin{
+
+		font-size: 6em;
+		color: white;
+		width: 90px;
+		
+	}
+
+	.icon-newspaper{
+		float: right; 
+		padding: 0;
+	}
+
+	.icon-linkedin{
+		float: left;
+		padding: 0;
+
+	}
+
+
+#londonBg{
+
+	background-image: url(.gitignore/images/doubledeck.png);
+	height: 365px; 
+	width: 100%; 
+	background-size: cover; 
+	background-attachment: fixed; 
+
+}
+
+	#shadowEffect{
+
+		background-color:rgba(22, 22, 31, 0.7);
+		height: 100%;
+		width: 100%;
+
+	}
+
+		#portrait{
+
+			background-image: url(.gitignore/images/portrait.png);
+			background-size: cover; 
+			height: 135px;
+			width: 135px; 
+			margin: 0 auto; 
+			position: relative; 
+			top: 50px;
+
+		}
+
+		#aboutMe{
+
+			font-family: 'Roboto', sans-serif;
+			font-size: 1.6em;
+			color: white; 
+			width: auto;
+			text-align: center; 
+			margin: 0 auto;
+			position: relative; 
+			top: 80px;
+			letter-spacing:5px; 
+
+		}
+
+			.transitionArrow{
+
+				color: #838B8B;
+
+			}
+
+#projects{
+
+	height: 100%; 
+	width: 100%; 
+	background-color:rgba(22, 22, 31, 1);
+
+}
+
 

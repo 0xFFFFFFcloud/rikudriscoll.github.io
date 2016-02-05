@@ -1,27 +1,117 @@
 <!DOCTYPE html> 
 <head> 
-	<link rel = "stylesheet" href = "./main.css"/> 
+
+	<!-- _____ Link Tags _____ -->
+
+	<!-- CSS Files -->
+	<link rel = "stylesheet" href = "main.css"/> 
+	<link rel = "stylesheet" href = "./css/fontello.css"/> 
+
+	<!-- Google Fonts -->
 	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto:500,700' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+
+
+	<!-- _____ Script Tags _____ -->
+
+	<!-- import jquery from Google CDN -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+
 </head> 
 
 <body> 
+
+	<div id = "initial">
+	</div> 
+
 	<div id = "wrapper"> 
 
 		 
 
 		<div id = "menuContainer">
+
+			<div id = "nameLogo">
+			</div>
+
+			<div id = "signature">
+			</div>
+
+			<ul id = "menuOptions">
+
+				<li class = "listItem"> <a class = "menuButtons" href = "#home"> Home </a> </li>
+				<li class = "listItem"> <a class = "menuButtons" href = "#autoBioButton"> About Me </a> </li>
+				<li class = "listItem"> <a class = "menuButtons" href = "#projectButton"> Projects </a> </li>
+				<li class = "listItem" id="contactButton"> <a class = "menuButtons" href = "#contactButton"> Contact </a> </li>
+
+			</ul>
+
 		</div> 
 
 		<div id = "mainSection"> 
-			<div id = "nameLogo">
+			
+			<div id ="welcomeSign">
+				<h1 style = "display: inline;">W</h1><h2 style = "display: inline;">ELCOME!</h2>
 			</div>
-			<div id ="title">
-				Welcome!
+
+			<div id ="greetContent">
+				<h2 id = "myName" style = "display: inline">I'M RIKU</h2>
 			</div>
+
+			<div id = "introContent">
+				<p class = "descriptionContent">|| Computer Science Student || <p>
+				<p class = "descriptionContent">|| Full Stack Developer || <p>
+				<p class = "descriptionContent">|| Android Developer || <p>
+				<p class = "descriptionContent">|| Entrepreneur ||<p>
+				<p class = "descriptionContent" style = "color: ivory; "> Regis University <br/> Graduation Date: May 1st, 2016<p>
+			</div>
+
+		<!-- Résumé Symbol -->
+			<div id ="symbolContainer">
+				<div class = "icon-newspaper">
+				</div>
+		<!-- LinkdIn Symbol -->
+				<div class = "icon-linkedin">
+				</div>
+			</div>
+
 		</div> 
 
-		
+		<div id = "londonBg">
+			<div id = "shadowEffect">
+
+				<div id = "portrait">
+				</div>
+
+				<div id = "aboutMe">
+					Tokyo <span class = "transitionArrow"> > </span> Portland, OR <span class = "transitionArrow"> > </span> Denver, CO <span class = "transitionArrow"> > </span> ?
+
+
+				</div>
+			</div> 
+		</div>
+
+		<div id = "projects">
+		</div>
 
 	</div> 
+
+	<!-- ___ javascript + jquery ___ -->
+	<script>
+
+	$(document).ready(function(){
+		window.setTimeout("fadeOutInDiv();", 2000);
+	});
+
+	function fadeOutInDiv(){
+		$("#welcomeSign").fadeOut(1000,"linear", function(){
+			$("#greetContent").fadeIn(1000);
+		});
+
+	}
+	
+
+	</script>
+
 </body> 
 

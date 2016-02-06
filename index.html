@@ -22,8 +22,14 @@
 
 <body> 
 
+
+
 	<div id = "initial">
 	</div> 
+
+
+	<div class = "fontelloButton" id = "linkdinProfile"><a class = "fontelloAnchor linkdin icon-linkedin" href = "https://www.linkedin.com/in/rikudriscoll" style="text-decoration: none;"></a></div>
+	<div class = "fontelloButton" id = "resumeFontello" ><a class = "fontelloAnchor resume icon-newspaper" href = "#" style="text-decoration: none;"></a></div>
 
 	<div id = "wrapper"> 
 
@@ -66,15 +72,6 @@
 				<p class = "descriptionContent" style = "color: ivory; "> Regis University <br/> Graduation Date: May 1st, 2016<p>
 			</div>
 
-		<!-- Résumé Symbol -->
-			<div id ="symbolContainer">
-				<div class = "icon-newspaper">
-				</div>
-		<!-- LinkdIn Symbol -->
-				<div class = "icon-linkedin">
-				</div>
-			</div>
-
 		</div> 
 
 		<div id = "londonBg">
@@ -97,13 +94,32 @@
 	</div> 
 
 	<!-- ___ javascript + jquery ___ -->
+
+	<script>
+	$(document).ready(function(){
+		window.setTimeout("fadeInMenu();", 3000);
+		
+	});
+
+	function fadeInMenu(){
+		$("#menuContainer").fadeIn(1000);
+	}
+
+	
+	</script>
+
+	<!-- script divider________________________________________________________ -->
+
 	<script>
 
 	$(document).ready(function(){
-		window.setTimeout("fadeOutInDiv();", 2000);
+		window.setTimeout("introFadeOutIn();", 2000);
+		
 	});
 
-	function fadeOutInDiv(){
+	
+
+	function introFadeOutIn(){
 		$("#welcomeSign").fadeOut(1000,"linear", function(){
 			$("#greetContent").fadeIn(1000);
 		});
@@ -112,6 +128,8 @@
 	
 
 	</script>
+
+	<!-- script divider________________________________________________________ -->
 
 </body> 
 

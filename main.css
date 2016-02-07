@@ -1,6 +1,7 @@
 html, body {
 	height: 100%;
 	margin: 0; 
+
 }
 
 #initial{
@@ -20,6 +21,7 @@ html, body {
 
 	width: 100%; 
 	height: 100%;
+
 
 }
 
@@ -137,7 +139,7 @@ html, body {
 				position: relative; 
 				height: 100px;
 				width: 100%;
-				top: 58px;
+				top: 65px;
 				padding: 0; 
 				margin: 0 auto;
 				letter-spacing:20px;  
@@ -151,7 +153,7 @@ html, body {
 
 				position: relative; 
 				height: 100px;
-				top: 87px;
+				top: 90px;
 				width: 395px;
 				padding: 0; 
 				letter-spacing:15px;  
@@ -195,7 +197,7 @@ html, body {
 		height: 100px;
 		width: 100%;
 		position: relative; 
-		top: 515px;
+		top: 510px;
 		float: left;
 		margin: 0;
 
@@ -288,6 +290,7 @@ html, body {
 	#londonBg{
 
 		background-image: url(images/doubledeck.png);
+		background-position: center; 
 		height: 365px; 
 		width: 100%; 
 		background-size: cover; 
@@ -329,7 +332,7 @@ html, body {
 
 				#aboutMe{
 
-					font-family: 'Roboto', sans-serif;
+					font-family: 'Raleway', sans-serif;
 					font-size: 1.6em;
 					color: white; 
 					width: auto;
@@ -353,7 +356,7 @@ html, body {
 	#projects{
 
 		background-image: url(images/bukansan.jpg);
-		height: 200%; 
+		height: 220%; 
 		width: 100%; 
 		background-size: cover; 
 		background-attachment: fixed; 
@@ -362,11 +365,25 @@ html, body {
 
 		.overlay{
 
-			height: 100%;
+			height: 90%;
 			width: 100%;
 			background-color:rgba(22, 22, 31, 0.8);
 
 		}
+
+			#projectTitle{
+
+				letter-spacing:20px;  
+				font-family: 'Raleway', sans-serif;
+				font-size: 3em;
+				color: 	#f5f5f5;
+				position: relative;
+				left: 1%;
+				top: 80px;
+				width: 430px;
+
+			} 
+
 			.infoContainer{
 
 				height: 115px;
@@ -380,24 +397,145 @@ html, body {
 				background-image: url(./images/mtHood.jpg);
 				background-size: cover; 
 				background-attachment: fixed;
+
 			}
 
-				#mtHoodBox1{
+			#aboutMeTitle{
 
+				letter-spacing:20px;  
+				font-family: 'Raleway', sans-serif;
+				font-size: 3em;
+				color: 	#f5f5f5;
+				position: relative;
+				left: 1%;
+				top: 50px;
+				width: 430px;
+			}
+
+
+				#whiteboardContainer{
+
+					background-image: url(images/bukansan.jpg);
+					background-size: cover;
+					height: 500px; 
+					width: 100%;
+					margin-top: -50px;
+
+				}
+					.overlay.min{
+						height: 100%;
+					}
+
+						#whiteboard{
+
+							height: 100%;
+							width: 100%;  
+							background-color: #E9E9EA;
+							opacity: 0.6;
+
+						}
+
+
+				#projectBox1{
+
+					position: relative;
+
+				}
+
+				#projectBox2{
+					
 					position: relative;
 					
 
 				}
 
-				#mtHoodBox2{
-					
-					position: relative;
-					
-
-				}
-
-				#mtHoodBox3{
+				#projectBox3{
 					
 					position: relative;
 
 				}
+
+				#lastTwoContainer{
+
+					height: 350px;
+					width: 75%;
+					margin: 0 auto; 
+
+				}
+					#projectBox4{
+						
+						position: relative;
+						height: 300px; 
+						width: 480px;
+						float: left;
+
+					}
+
+					#projectBox5{
+
+						height: 300px; 
+						width: 480px;
+						float:right;
+
+					}
+
+
+		#contactContainer{
+
+			height: 10%;
+			width: 100%;
+			position: relative;
+
+		}
+
+			#contactPlaceholder{
+
+				width: 590px;
+				height: 90px;
+				margin: 0 auto;
+				position: relative; 
+				top: 15%;
+
+			}
+
+				.contactFontello{
+
+					padding-right: 100px;
+					text-decoration: none; 
+					font-weight: bold; 
+					font-size: 5em;
+					float: left; 
+					text-align: center; 
+
+				}
+
+					#gitContact{
+
+						padding-right: 0;
+						color: #ee3e64;
+
+					}
+						#gitContact:hover{
+							color: ;
+						}
+
+					#mailContact{
+
+						color: #FF6600;
+
+					}
+						#mailContact:hover{
+							
+						}
+
+					#twitterContact{
+
+						padding-left: 40px;
+						color: #3cf;
+
+					}
+						#twitterContact{
+
+						}
+
+					

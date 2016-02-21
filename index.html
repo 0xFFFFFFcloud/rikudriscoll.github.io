@@ -1,200 +1,255 @@
 <!DOCTYPE html> 
-<head> 
+<html> 
 
-	<!-- _____ Link Tags _____ -->
+	<head> 
 
-	<!-- CSS Files -->
-	<link rel = "stylesheet" href = "main.css"/> 
-	<link rel = "stylesheet" href = "./css/fontello.css"/> 
+		<meta charset = "utf-8"/>
+		<meta name = "viewport" content = "width=device-width, initial-scale= 1"/>
 
-	<!-- Google Fonts -->
-	<link href='https://fonts.googleapis.com/css?family=Raleway:100' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:300' rel='stylesheet' type='text/css'>
+		<!-- link TAGS -->
 
-	<!-- Favicon -->
-	<link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+		<!-- MAIN.css -->
+			<link rel = "stylesheet" type="text/css" href = "css/main.css"/>
 
-	<!-- _____ Script Tags _____ -->
+		<!-- Custom CSS FOR SCROLLING Animation-->
+    		<link href="css/scrolling-nav.css" rel="stylesheet">
 
-	<!-- import jquery from Google CDN -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!-- Latest compiled and minified CSS -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!-- Optional theme -->
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
-</head> 
+		<!-- Fonts -->
+			<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
+			<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'>
 
-<body> 
+		<!-- Favicon -->
+			<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
+		<!-- script TAGS -->
+		<!-- jQuery -->
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
+	</head> 
 
-	<div id = "initial">
-	</div> 
+	<body> 	
 
-<!-- _______________________________ -->
-<!-- Fontello Icons/Buttons -->
-	<div id = "fontelloWrap">
+<!-- __________________________________________________________________________ -->
+<!-- First Section-->
+<!-- __________________________________________________________________________ -->
 
-		<div id = "fontelloPlacement">
-			<div class = "fontelloButton" id = "linkdinProfile"><a class = "fontelloAnchor linkdin icon-linkedin" href = "https://www.linkedin.com/in/rikudriscoll" style="text-decoration: none;"></a></div>
-			<div class = "fontelloButton" id = "resumeFontello" ><a class = "fontelloAnchor resume icon-newspaper" href = "#" style="text-decoration: none;"></a></div>
-		</div>
+		<div id = "londonBg"> 
+			<div id = "overlay"> 
+				<nav class = "nav navbar-inner"> 
+					<div class = "container-fluid navbar-locator"> 
+						<div class = "navbar-header">
 
-	</div>
-<!-- _______________________________ -->
-	<div id = "wrapper"> 
-		 
-<!-- _______________________________ -->
-		<div id = "menuContainer">
+							<button type = "button" class = "navbar-toggle button-locator" data-toggle = "collapse" data-target = "#mainNavBar">
+								<span class = "icon-bar"> </span> 
+								<span class = "icon-bar"> </span> 
+								<span class = "icon-bar"> </span> 
+							</button> 
 
-			<div id = "nameLogo">
-			</div>
+							<a href = "#" > <div id = "nameLogo"> </div> </a> 
 
-			<div id = "signature">
-			</div>
+						</div> 
 
-			<ul id = "menuOptions">
+						<div class = "collapse navbar-collapse" id = "mainNavBar"> 
 
-				<li class = "listItem"> <a class = "menuButtons" href = "#home"> Home </a> </li>
-				<li class = "listItem"> <a class = "menuButtons" href = "#autoBioButton"> About Me </a> </li>
-				<li class = "listItem"> <a class = "menuButtons" href = "#projectButton"> Projects </a> </li>
-				<li class = "listItem" id="contactButton"> <a class = "menuButtons" href = "#contactButton"> Contact </a> </li>
+							<ul class = "nav navbar-nav menu-custom" id = "navContainer"> 
 
-			</ul>
+							<!-- Home button has not practical use. just there to keep balance of the webpage as a whole -->
+								<li> <a  href = "#"> HOME </a> </li> 
+								<li> <a  class = "page-scroll" href = "#indexContainer"> ABOUT </a> </li> 
+								<li> <a  href = "#"> PROJECTS </a> </li> 
+								<li> <a  class = "withBorder" href = "#"> CONTACT </a> </li> 
 
-		</div> 
-<!-- _______________________________ -->
-		<div id = "mainSection"> 
-			
-			<div id = "mainDisplayContainer">
+							</ul> 
 
-				<div id ="welcomeSign">
-					<h1 style = "display: inline;">W</h1><h2 style = "display: inline;">ELCOME!</h2>
+						</div> 
+
+					</div> 
+				</nav> 
+				<div class = "scrollme">
+
+					<div class = "animateme"
+							class="fittext animateme"
+							data-when="exit"
+							data-from="0"
+							data-to="0.75"
+							data-opacity="0"
+							data-translatey="-300"
+
+					 >
+						<div class = "container"> 
+
+							<div class ="row"> 
+								<div class = "col-md-6 col-md-offset-3" id = "titleBanner">
+									<span class = "increase-letter-size">W</span>ELCOME! 
+								</div> 
+							</div> 
+
+						</div> 
+
+						<div class = "container"> 
+
+							<div class ="row"> 
+
+								<div class = "col-md-6 col-md-offset-3 introBanner">
+									<span class = "increase-letter-size">C</span>OMPUTER <span class = "increase-letter-size">S</span>CIENCE <span class = "increase-letter-size">S</span>TUDENT
+								</div> 
+
+							</div> 
+
+						</div> 
+
+						<div class = "container">
+
+							<div class = "col-md-6 col-md-offset-3 introBanner">
+									<span class = "increase-letter-size">M</span>OBILE <span class = "increase-letter-size">D</span>EVELOPER
+							</div> 
+
+						</div> 
+
+						<div class = "container">
+
+							<div class = "col-md-6 col-md-offset-3 introBanner">
+									<span class = "increase-letter-size">W</span>EB <span class = "increase-letter-size">D</span>EVELOPER
+							</div> 
+
+						</div>
+
+						<div class = "container">
+
+							<div class = "col-md-6 col-md-offset-3 introBanner">
+									<span class = "increase-letter-size">E</span>NTREPRENEUR 
+							</div> 
+
+						</div>
+
+					</div> <!--  class = "animateme" -->
+
+				</div> <!-- scrollme div -->
+		
+
+				<div id = "arrowButton"> 
+
+					<a class = "page-scroll navArrow" href = "#indexContainer" ><span class = "glyphicon glyphicon-chevron-down"></span></a>
+
 				</div>
 
-				<div id ="greetContent">
-					<h2 id = "myName" style = "display: inline">I'M RIKU</h2>
-				</div>
 
-				<div id = "introContent">
-					<p class = "descriptionContent">|| Computer Science Student || <p>
-					<p class = "descriptionContent">|| Full Stack Developer || <p>
-					<p class = "descriptionContent">|| Android Developer || <p>
-					<p class = "descriptionContent">|| Entrepreneur ||<p>
-					<p class = "descriptionContent" style = "color: black; font-weight: bold "> Regis University <br/> Graduation Date: May 1st, 2016<p>
-				</div>
+			</div> <!-- "overlay" endtag -->
 
-			</div>
+		</div> <!-- "londonBg" endtag -->
 
-		</div> 
-<!-- _______________________________ -->
-		<div id = "londonBg">
-			<div id = "shadowEffect">
+<!-- __________________________________________________________________________ -->
+<!-- Second Section-->
+<!-- __________________________________________________________________________ -->
 
-				<div id = "frame">
 
-					<div id = "portrait">
+		<div id = "indexContainer">
+
+			<div class = "container">
+
+				<div class = "row"> 
+
+					<div class = "col-md-4 col-md-offset-4">
+
+						<div id = "aboutTitle"> 
+							<span class = "increase-letter-size">A</span> brief background
+						</div> 
+
 					</div>
-
-				</div> <!-- id = frame -->
-
-				<div id = "cityLiving">
-						Tokyo <span class = "transitionArrow"> > </span> Portland, OR <span class = "transitionArrow"> > </span> Denver, CO <span class = "transitionArrow"> > </span> Seoul <span class = "transitionArrow"> > </span> Denver, CO <span class = "transitionArrow"> > </span> ?
-
-				</div>
-
-			</div> 
-		</div>
-
-<!-- _______________________________ -->
-		<div id = "projects">
-
-			<div class = "overlay">
-
-				<div id = "aboutMeContainer">
-
-					<div id = "aboutMeTitle">
-						ABOUT ME
-					</div>
-
-				</div>
-
-				<!-- -------------------------Section Divider b/w About Me & Projects----------------------------- -->
-
-				<div id = "projectBoxContainer">
-
-					<div id = "projectTitle">
-						PROJECTS
-					</div>
-
-					<div class = "infoContainer" id = "projectBox1">
-					</div>
-
-					<div class = "infoContainer" id = "projectBox2">
-					</div>
-
-					<div class = "infoContainer" id = "projectBox3">
-					</div>
-
-				</div>
-
-			</div>
-
-			<div id = "contactContainer" >
-
-				<div id = "contactPlaceholder">
-
-					<a class = "contactFontello icon-twitter" id = "twitterContact" href = "https://twitter.com/ku_503" style="text-decoration: none;"></a>
-
-					<a class = "contactFontello icon-mail" id = "mailContact" href = "mailto:rikuregis16@gmail.com" style="text-decoration: none;"></a>
-
-					<a class = "contactFontello icon-github-circled" id = "gitContact" href = "https://github.com/rikudriscoll" style="text-decoration: none;"></a>
-
 
 				</div> 
 
+			</div> <!-- container endtag -->
+
+			<!-- Horizontal Divider -->
+			<div class = "container">
+
+				<div class = "row">
+
+					<div class = "col-md-10 col-md-offset-1">
+
+						<div class="hr_line"></div>
+
+						<!-- My Signature -->
+						<div id = "mySignature">
+						</div>
+
+					</div>
+
+				</div> 
+
+			</div> 
+
+			<!-- City "Squares" -->
+			<div class = "container-fluid">
+
+					<div class = "row" id = "aboutMeContainer">
+
+						<div class = "col-md-3" >
+
+							Tokyo 
+							<div class = "squareBanner" id = "square1">
+							</div>
+
+						</div>
+
+						<div class = "col-md-3" >
+
+							Portland, OR 
+							<div class = "squareBanner" id = "square2">
+							</div>
+
+						</div>
+
+						<div class = "col-md-3" >
+
+							Seoul 
+							<div class = "squareBanner" id = "square3">
+							</div>
+
+						</div>
+
+						<div class = "col-md-3" >
+
+							Denver, CO 
+							<div class = "squareBanner" id = "square4">
+							</div>
+							
+
+						</div>
+
+					</div>
+
 			</div>
 
-		</div>
+		</div> <!-- indexContainer endtag -->
 
+<!-- __________________________________________________________________________ -->
+<!-- Scripts -->
+<!-- __________________________________________________________________________ -->
 
+		<!-- Arrow Animation -->
+		<script type = "text/javascript"> 
 
-	</div> 
+			$(".navArrow").hover(function() {
+    			$(this).animate({ marginTop: 300 });
+			})
 
-	<!-- ___ javascript + jquery ___ -->
+		</script> 
 
-	<script>
-	$(document).ready(function(){
-		window.setTimeout("fadeInMenu();", 3000);
-		
-	});
+		<!-- ScrollMe Script -->
+		<script src = "js/jquery.scrollme.min.js"></script> 
 
-	function fadeInMenu(){
-		$("#menuContainer").fadeIn(1000);
-	}
+		<!-- Scrolling Nav JavaScript -->
+		<script src="js/jquery.easing.min.js"></script>
+    	<script src="js/scrolling-nav.js"></script>
+	</body> 
 
-	
-	</script>
-
-	<!-- script divider________________________________________________________ -->
-
-	<script>
-
-	$(document).ready(function(){
-		window.setTimeout("introFadeOutIn();", 2000);
-		
-	});
-
-	
-
-	function introFadeOutIn(){
-		$("#welcomeSign").fadeOut(1000,"linear", function(){
-			$("#greetContent").fadeIn(1000);
-		});
-
-	}
-	
-
-	</script>
-
-	<!-- script divider________________________________________________________ -->
-
-</body> 
-
+</html> 

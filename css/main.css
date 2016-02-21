@@ -1,0 +1,299 @@
+body,html{
+
+	height: 100%; 
+	width: 100%; 
+	background-color: #303030  !important;
+}
+
+#londonBg {
+	height: 100%; 
+	width: 100%; 
+	background-image: url(../images/doubledeck_small.jpg); 
+	background-size: cover; 
+	background-repeat: no-repeat;
+	overflow: hidden; 
+	background-attachment: fixed; 
+
+}
+	
+	#overlay{
+
+		height: 100%; 
+		width: 100%; 
+		background-color: rgba(0,0,0,0.66);
+	}
+
+	.navbar-inner {
+
+    	background:transparent;
+
+	}	
+
+		#nameLogo{
+
+			height: 140px; 
+			width: 140px; 
+			background-image: url(../images/logoRiku.png); 
+			background-size: cover; 
+			background-repeat: no-repeat;
+			position: relative; 
+			margin-left: 25px;
+		}
+
+
+		.navbar-locator{
+
+			position: relative !important; 
+			top: 30px;
+
+		}
+
+		.menu-custom{
+
+			float: right !important;
+			letter-spacing: 3px;
+			position: relative; 
+			top: 15px;
+
+		}
+
+		.button-locator{
+
+			position: relative; 
+			top: 45px; 
+			right: 20px;
+		}
+
+			.menu-custom > li{
+
+				padding-right: 10px;
+
+			}
+
+			/* Change default text color (blue) to white AND change font */
+			.menu-custom > li > a{
+
+				font-family: 'Courier New';
+				color: #D0D0D0  !important;
+				position: relative !important; 
+				top: 30px;
+			}
+
+			/*Override default background color on hover (make it any color, then set the opacity to zero*/
+			.navbar-inner .navbar-nav > li > a:hover, .navbar-inner .navbar-nav > li > a:focus {
+   				background-color: transparent !important;
+    			color: white !important;
+			}
+
+				.withBorder{
+
+					border: 2px solid white;
+					overflow: hidden; 
+
+				}
+
+					.navbar-inner .navbar-nav > li > .withBorder:hover{
+
+						background-color: white !important; 
+						color: black !important;
+
+					}
+
+					.withBorder:after {
+					  content: '';
+					  display: block;
+					  position: absolute;
+					  left: 50%;
+					  top: 50%;
+					  width: 120px;
+					  height: 120px;
+					  margin-left: -60px; /*positioning "ripple"*/
+					  margin-top: -60px; /*positioning "ripple"*/
+					  background: cyan;
+					  border-radius: 100%;
+					  opacity: .6;
+
+					  transform: scale(0);
+					}
+
+					@keyframes ripple {
+					  0% {
+					    transform: scale(0);
+					  }
+					  20% {
+					    transform: scale(1);
+					  }
+					  100% {
+					    opacity: 0;
+					    transform: scale(1);
+					  }
+					}
+
+					.withBorder:not(:active):after {
+					  animation: ripple 1s ease-out;
+					}
+
+					/* fixes initial animation run, without user input, on page load.
+					 */
+					.withBorder:after {
+					  visibility: hidden;
+					}
+
+					.withBorder:focus:after {
+					  visibility: visible;
+					} 
+
+
+		/*The navbar is transparent so icon-bars are transparent. 
+		Display icon-bars*/
+		.navbar-toggle .icon-bar {
+		    display: block;
+		    width: 22px;
+		    height: 2px;
+		    border-radius: 1px;
+		    background-color: #ffffff;
+		}
+
+
+
+	#titleBanner{
+
+		position: relative; 
+		font-family: 'Alegreya Sans SC', sans-serif;
+		font-size: 4.7em;
+		font-weight: 500; 
+		letter-spacing: 8px;
+		top: 70px;
+		color: white; 
+		text-align: center; 
+
+	}
+
+	.increase-letter-size{
+
+		font-size: 1.4em;
+
+	}
+
+	.introBanner{
+
+		color: white; 
+		position: relative; 
+		font-family: 'Alegreya Sans SC', sans-serif;
+		top: 50px;
+		text-align: center; 
+		font-size: 1.2em;
+		letter-spacing: 3px;
+
+	}
+
+	#arrowButton{
+
+		height: 60px;
+		width: 60px; 
+		text-align: center; 
+		margin: 0 auto;
+		position: relative; 
+		top: 220px;
+		font-size: 3em;
+
+
+	}
+		#arrowButton > a {
+			color: #C0C0C0  ;
+		}
+
+
+
+#indexContainer{
+
+	height: 100%; 
+	width: 100%; 
+	background-color: rgba(255,255,255, 0.86);
+
+}
+
+	#aboutTitle{
+
+		font-family: 'Raleway', sans-serif;
+		font-size: 2em; 
+		letter-spacing: 2px; 
+		position: relative; 
+		top: 70px; 
+		text-align: center; 
+	}
+
+
+	.hr_line { 
+		position: relative; 
+		top: 100px;
+   		margin: 25px 0;
+    	height: 1px;
+    	background: black;
+    	background: -webkit-gradient(linear, 0 0, 100% 0, from(#C8C8C8), to(#C8C8C8), color-stop(50%, black));
+	}
+
+	#mySignature{
+
+		height: 120px; 
+		width: 200px;
+		position: relative; 
+		top: -10px;
+		background-image: url(../images/signature_min_black.png); 
+		background-size: cover; 
+		background-repeat: no-repeat;
+
+	}
+
+	#aboutMeContainer{
+
+		position: relative; 
+		top: 20px; 
+
+	}
+
+		.squareBanner{
+
+			height: 250px;
+			width: 265px; 
+			margin: 0 auto;
+			background-color: blue;
+
+		}
+
+			#square1{
+
+				background-image: url(../images/doubledeck_small.jpg); 
+				background-size: cover; 
+				background-repeat: no-repeat;
+
+			}
+
+			#square2{
+				
+				background-image: url(); 
+				background-size: cover; 
+				background-repeat: no-repeat;
+
+			}
+
+			#square3{
+
+				background-image: url(); 
+				background-size: cover; 
+				background-repeat: no-repeat;
+
+				
+			}
+
+			#square4{
+
+				background-image: url(); 
+				background-size: cover; 
+				background-repeat: no-repeat;
+				
+			}
+
+
+
+

@@ -534,9 +534,21 @@ body,html{
 
 	#contactContainer{
 
+		width: 100%;
 		height: 100%; 
+		background-image: url(../images/palmTree.jpg) !important; 
+		background-size:100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		overflow: hidden; 
+		background-attachment: fixed; 
+		max-width: 1920px;
 
 	}
+
 
 	#contactPlaceholder{
 

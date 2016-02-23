@@ -204,7 +204,7 @@
 
   						<div class = "cityName"> TOKYO </div>
 
-    					<a href="#" class="thumbnail">
+    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#shibuyaModal">
 
       						<img src="./images/shibuya.jpg" alt="Shibuya">
     					</a>
@@ -216,7 +216,7 @@
 
   						<div class = "cityName"> PORTLAND, OR </div>
 
-    					<a href="#" class="thumbnail">
+    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#portlandModal">
 
       						<img src="./images/portland.PNG" alt="Portland">
     					</a>
@@ -228,7 +228,7 @@
 
   						<div class = "cityName"> SEOUL </div>
 
-    					<a href="#" class="thumbnail">
+    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#seoulModal">
 
       						<img src="./images/gyeongbokgung.jpg" alt="Seoul">
     					</a>
@@ -240,7 +240,7 @@
 
   						<div class = "cityName"> DENVER, CO </div>
 
-    					<a href="#" class="thumbnail">
+    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#denverModal">
 
       						<img src="./images/redrocks.jpg" alt="Shibuya">
 
@@ -268,6 +268,65 @@
 			</div> 
 
 		</div> <!-- indexContainer endtag -->
+
+
+<!-- modal window for Sibuya (left most image) -->
+<div class="modal fade" id="shibuyaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Tokyo, Japan</h4>
+      </div>
+      <div class="modal-body">
+        For the first 13 years, I lived in Tokyo.
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- modal window for Portland (second from left) -->
+<div class="modal fade" id="portlandModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Portland, Oregon USA</h4>
+      </div>
+      <div class="modal-body">
+        When I graduated elementary school, I moved to Portland. 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="seoulModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Seoul, South Korea</h4>
+      </div>
+      <div class="modal-body">
+        I lived in Seoul for half a year to study at Korea University in Anam. There, I made countless connections with cool, interesting people. 
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="denverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Denver, Colorado USA</h4>
+      </div>
+      <div class="modal-body">
+        I had to get away from the constant rain in Portland. So I escaped out Denver. Devenr offered me its boulders, so naturally, I climbed it. 
+      </div>
+    </div>
+  </div>
+</div>
 
 <!-- __________________________________________________________________________ -->
 <!-- Project Section-->

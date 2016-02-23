@@ -481,13 +481,13 @@ body,html{
 
  	#indexContainer{
 
- 		height: 100%;
+ 		height: 105%;
  	}
 
  		#portraitBanner{
 
  			top: 25px; 
- 			left: -63px;
+ 			left: -70px;
  		}
 
  			#portrait{
@@ -534,7 +534,7 @@ body,html{
 
 	#contactContainer{
 
-		height: 100%; 
+		height: 90%; 
 
 	}
 
@@ -568,7 +568,7 @@ body,html{
 	#fontelloContainer{
 
 		position: relative; 
-		top: 290px; 
+		top: 265px; 
 
 	}
 		#fontelloDiv{

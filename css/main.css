@@ -313,21 +313,23 @@ body,html{
 
 	#contactContainer{
 
-		height: 75%;
+		height: 85%;
 		width: 100%;
-		background-image: url(../images/bukansan.jpg);
+		background-image: url(../images/mtHood.jpg);
 		background-size: cover; 
 		background-repeat: no-repeat;
 		max-width: 1920px; 
 		overflow: hidden;
+		background-position: center;
+		background-attachment: fixed; 
 
 	}
 
-		#greyOverlay{
+		#blackOverlay{
 
 			height: 100%; 
 			width: 100%; 
-			background-color: rgba(42,42,42,0.5); 
+			background-color: rgba(0,0,0,0.5); 
 
 		}
 
@@ -345,15 +347,29 @@ body,html{
 
 			}
 
-			#contactPlaceholder{
+			#twitterDivContainer{
 
-				height: auto; 
-				width: 290px; 
-				margin: 0 auto;
+				height: 100%;
+				width: 100%;
+				top: 20px;
 			}
-			
+				#twitterDiv{
 
-				.contactFontello{
+					height: 100%; 
+					width: 500px;  
+					margin: 0 auto; 
+
+				}
+
+		#fontelloDiv{
+
+			height: 100px; 
+			width: 400px;
+			margin: 0 auto;
+
+		}
+
+			.contactFontello{
 
 					text-decoration: none; 
 					font-weight: bold; 
@@ -367,7 +383,7 @@ body,html{
 					}
 
 					#mailContact{
-						color: #00CC00;
+						color: #FFB500;
 					}
 						
 					#twitterContact{
@@ -378,16 +394,7 @@ body,html{
 						color: #D34836;
 					}
 
-			#twitterDiv{
 
-				height: 350px; 
-				width: 300px; 
-				position: relative; 
-				top: -10px; 
-				right: 100px; 
-				float: right; 
-
-			}
 
 
 } /*closing brace for @media screen and (max-width: 1440px)*/
@@ -409,42 +416,65 @@ body,html{
 
 @media screen and (max-width: 568px) {
 
-	#mainNavBar{
-
-		height: 130px;
+	#londonBg {
+		height: 100%; 
+		width: 100%; 
+		background-image: url(../images/loneCloud.jpg) !important; 
+		background-size:100%;
+		background-repeat: no-repeat;
+		background-position: center;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		overflow: hidden; 
+		background-attachment: fixed; 
+		max-width: 1920px;
 
 	}
 
-		#navContainer > li > a {
+		#overlay{
 
-			padding-top: 0px;
-			padding-bottom: 5px; 
-			top: 0px;
+			height: 100%; 
+			width: 100%; 
+			background-color: rgba(0,0,0,0.3);
 		}
 
+			#mainNavBar{
 
-	#nameLogo{
+				height: 130px;
 
-		height: 100px !important; 
-		width: 100px !important; 
+			}
 
-	}
+				#navContainer > li > a {
 
-	    #titleBanner {
-	        font-size: 3.5em !important;
-	    }
+					padding-top: 0px;
+					padding-bottom: 5px; 
+					top: 0px;
+				}
 
-	    .introBanner{
 
-	    	font-size: 0.8em !important;
+			#nameLogo{
 
-	    }
+				height: 100px !important; 
+				width: 100px !important; 
 
-	    #arrowButton{
+			}
 
-	    	top: 230px !important; 
+			    #titleBanner {
+			        font-size: 3.5em !important;
+			    }
 
-	    }
+			    .introBanner{
+
+			    	font-size: 0.8em !important;
+
+			    }
+
+			    #arrowButton{
+
+			    	top: 125px !important; 
+
+			    }
 
 /*___________________________________________________ABOUT SECTION MOBILE */
 /*________________________________________________________________________*/
@@ -456,7 +486,7 @@ body,html{
 
  		#portraitBanner{
 
- 			top: 35px; 
+ 			top: 25px; 
  			left: -63px;
  		}
 
@@ -477,14 +507,20 @@ body,html{
 
  		.hr_line{
 
- 			top: 30px;
+ 			top: 20px;
 
  		}
 
  		#cityBlocks{
 
  			position: relative; 
- 			top: 40px;
+ 			top: 15px;
+
+ 		}
+
+ 		.hr_line.bottom{
+
+ 			top: -10px;
 
  		}
 
@@ -498,7 +534,7 @@ body,html{
 
 	#contactContainer{
 
-		height: 120%; 
+		height: 100%; 
 
 	}
 
@@ -513,21 +549,35 @@ body,html{
 
 			text-decoration: none; 
 			font-weight: bold; 
-			font-size: 5em;
+			font-size: 3em;
 			float: left; 
 
 		}
 
 	#twitterDiv{
 
-		height: 100px !important; 
+		top: 25px;
+		height: 50px !important; 
 		width: 250px !important; 
-		position: relative; 
-		float: left; 
-		left: 15px;
+		position: relative;  
+		margin: 0 auto !important;
 
 
 	}
+
+	#fontelloContainer{
+
+		position: relative; 
+		top: 290px; 
+
+	}
+		#fontelloDiv{
+
+			height: 50px; 
+			width: 258px; 
+			margin: 0 auto;
+			padding: 10px;
+		}
 
 
 } /*closing brace for @media screen and (max-width: 568px) */

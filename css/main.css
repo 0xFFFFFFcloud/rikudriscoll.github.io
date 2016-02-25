@@ -230,6 +230,7 @@ body,html{
 
 			position: relative; 
 			top: 55px; 
+
 		}
 
 			#centerPositionContainer{
@@ -276,7 +277,47 @@ body,html{
 		#cityBlocks{
 
 			position: relative; 
-			top: 110px; 
+			top: 120px; 
+
+		}
+			.thumbnail {
+   				position:relative;
+    			overflow:hidden;
+			}
+ 
+			.caption {
+			    position:absolute;
+			    top:0;
+			    right:0;
+			    background:rgba(0, 0, 0, 0.55);
+			    width:100%;
+			    height:100%;
+			    padding:2%;
+			    display: none;
+			    text-align: left;
+			    color:#fff !important;
+			    z-index:2;
+			}
+
+				.btn{
+					height: 100%; 
+					width: 100%; 
+				}
+
+					.cityName{
+						color: white; 
+						font-family: 'Alegreya Sans SC', sans-serif;
+						letter-spacing: 3px; 
+						position: relative; 
+						top: 110px; 
+						font-size: 1.3em;
+						font-weight: 600;
+					}
+
+		#btmHorizantalDivider{
+
+			height: 5px !important;
+			top: 25px !important;  
 
 		}
 
@@ -300,10 +341,56 @@ body,html{
 
 		#projectTitle{
 
-			height: 100px; 
+			height: 75px; 
 			width: 200px; 
 
 		}
+
+		#projectListContainer{
+
+			height: auto; 
+		}
+
+
+			.projectBoxContainer{
+
+				height: 160px !important;  
+				width: 100%;  
+				margin: 0 auto;
+				margin-bottom: 10px;
+			}
+
+				.projectBox{
+
+					height: 160px !important;  
+					width: 100%; 
+					margin: 0 auto;
+
+				}
+
+				.individualLayout{
+
+					height: 75%; 
+					width: 100%; 
+					position: relative; 
+					top: 25%;
+
+					background-color: white; 
+					border-radius: 7px; 
+
+					
+
+				}
+					.projectLogoDiv{
+
+						height: 51%; 
+						width: 23%; 
+						position: absolute;
+						z-index: 1000;
+						left: 15%;
+
+						background-color: cyan;
+					}
 
 
 
@@ -313,13 +400,13 @@ body,html{
 
 	#contactContainer{
 
-		height: 85%;
+		height: 75%;
 		width: 100%;
 		background-image: url(../images/mtHood.jpg);
 		background-size: cover; 
 		background-repeat: no-repeat;
 		max-width: 1920px; 
-		overflow: hidden;
+		overflow: scroll;
 		background-position: center;
 		background-attachment: fixed; 
 
@@ -338,9 +425,9 @@ body,html{
 				width: 200px; 
 				color: white; 
 				font-size: 3em; 
-				font-family: 'Raleway', sans-serif;
-				font-weight: 600; 
-				letter-spacing: 3px; 
+				font-family: 'Alegreya Sans SC', sans-serif;
+				font-weight: 300; 
+				letter-spacing: 5px; 
 				position: relative; 
 				top: 10px; 
 				left: 20px; 
@@ -379,20 +466,36 @@ body,html{
 				}
 
 					#gitContact{
-						color: #ee3e64;
+						color: #F0F0F0 ;
 					}
 
-					#mailContact{
-						color: #FFB500;
+						#gitContact:hover{
+							color: #ee3e64;
+						}
+
+					#linkdContact{
+						color: #F0F0F0 ;
 					}
 						
+						#linkdContact:hover{
+							color: #007AB9; 
+						}
+
 					#twitterContact{
-						color: #3cf;
+						color: #F0F0F0 ;
 					}
 
+						#twitterContact:hover{
+							color: #3cf; 
+						}
+
 					#googleContact{
-						color: #D34836;
+						color: #F0F0F0  ;
 					}
+
+						#googleContact:hover{
+							color: #D34836;
+						}
 
 
 

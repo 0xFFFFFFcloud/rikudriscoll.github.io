@@ -6,7 +6,7 @@
 		<meta charset = "utf-8"/>
 		<meta name = "viewport" content = "width=device-width, initial-scale= 1"/>
 
-		<!-- link TAGS -->
+		<!-- relevant link TAGS -->
 
 			<!-- MAIN.css -->
 				<link rel = "stylesheet" type="text/css" href = "css/main.css"/>
@@ -17,11 +17,6 @@
 			<!-- Custom CSS FOR SCROLLING Animation-->
 	    		<link href="css/scrolling-nav.css" rel="stylesheet">
 
-			<!-- Latest compiled and minified CSS -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-			<!-- Optional theme -->
-				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
-
 			<!-- Fonts -->
 				<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
 				<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'>
@@ -29,12 +24,16 @@
 			<!-- Favicon -->
 				<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
 
-		<!-- script TAGS -->
+		<!-- Bootstrap TAGS -->
 
 			<!-- import jquery from Google CDN -->
 				<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 			<!-- Latest compiled and minified JavaScript -->
 				<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+			<!-- Latest compiled and minified CSS -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+			<!-- Optional theme -->
+				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 	</head> 
 
@@ -65,7 +64,7 @@
 							<ul class = "nav navbar-nav menu-custom" id = "navContainer"> 
 
 							<!-- Home button has not practical use. just there to keep balance of the webpage as a whole -->
-								<li> <a  href = "#"> HOME </a> </li> 
+								<li> <a  href = "./PDF/CV.PDF" target="_blank"> RÉSUMÉ </a> </li> 
 								<li> <a  class = "page-scroll" href = "#indexContainer"> WHERE I'VE BEEN </a> </li> 
 								<li> <a  class = "page-scroll" href = "#projectContainer"> PROJECTS </a> </li> 
 								<li> <a  class = "page-scroll withBorder" href = "#contactContainer"> CONTACT </a> </li> 
@@ -202,51 +201,52 @@
 
   					<div class="col-xs-6 col-md-3">
 
-  						<div class = "cityName"> TOKYO </div>
-
-    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#shibuyaModal">
-
-      						<img src="./images/shibuya.jpg" alt="Shibuya">
-    					</a>
-
-
-  					</div>
-
-  					<div class="col-xs-6 col-md-3">
-
-  						<div class = "cityName"> PORTLAND, OR </div>
-
-    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#portlandModal">
-
-      						<img src="./images/portland.PNG" alt="Portland">
-    					</a>
-
-
-  					</div>
+            			<div class="thumbnail">
+                			<div class="caption">
+                				
+                				<!-- confusing naming convention, but class = "btn" resides in bootstrap -->
+                				<a href = "#" class = "btn" data-toggle="modal" data-target="#shibuyaModal"> <span class = "cityName">TOKYO</span></a>
+                	
+                			</div>
+                			<img src="./images/shibuya.jpg" alt="..." class="">
+            			</div>
+        			</div>
 
   					<div class="col-xs-6 col-md-3">
 
-  						<div class = "cityName"> SEOUL </div>
-
-    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#seoulModal">
-
-      						<img src="./images/gyeongbokgung.jpg" alt="Seoul">
-    					</a>
-
-
-  					</div>
+            			<div class="thumbnail">
+                			<div class="caption">
+                	
+                				<a href = "#" class = "btn" data-toggle="modal" data-target="#portlandModal"> <span class = "cityName">PORTLAND, OR</span></a>
+                	
+                			</div>
+                			<img src="./images/portland.png" alt="..." class="">
+            			</div>
+        			</div>
 
   					<div class="col-xs-6 col-md-3">
 
-  						<div class = "cityName"> DENVER, CO </div>
+            			<div class="thumbnail">
+                			<div class="caption">
+                	
+                				<a href = "#" class = "btn" data-toggle="modal" data-target="#seoulModal"> <span class = "cityName">SEOUL</span></a>
+                	
+                			</div>
+                			<img src="./images/gyeongbokgung.jpg" alt="..." class="">
+            			</div>
+        			</div>
 
-    					<a href="#" class="thumbnail" data-toggle="modal" data-target="#denverModal">
+  					<div class="col-xs-6 col-md-3">
 
-      						<img src="./images/redrocks.jpg" alt="Shibuya">
-
-    					</a>
-
-  					</div>
+            			<div class="thumbnail">
+                			<div class="caption">
+                	
+                				<a href = "#" class = "btn" data-toggle="modal" data-target="#denverModal"> <span class = "cityName">DENVER, CO</span></a>
+                	
+                			</div>
+                			<img src="./images/redrocks.jpg" alt="..." class="">
+            			</div>
+        			</div>
   
 				</div>
 
@@ -257,7 +257,7 @@
 
 				<div class = "row">
 
-					<div class = "col-md-10 col-md-offset-1">
+					<div class = "col-md-10 col-md-offset-1" id = "btmHorizantalDivider">
 
 						<div class="hr_line bottom"></div>
 
@@ -322,7 +322,7 @@
         <h4 class="modal-title" id="myModalLabel">Denver, Colorado USA</h4>
       </div>
       <div class="modal-body">
-        I had to get away from the constant rain in Portland. So I escaped out Denver. Devenr offered me its boulders, so naturally, I climbed it. 
+        I had to get away from the constant rain in Portland. So I escaped out to Denver. 
       </div>
     </div>
   </div>
@@ -336,9 +336,151 @@
 
 			<div id = "projectTitle"> 
 
-				Projects
+				PROJECTS
 
 			</div> 
+
+			<div class = "container" id = "projectListContainer"> 
+
+				<div class = "row"> <!-- ---------------------------------------------------Start row ------------- -->
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+
+				</div> <!-- ---------------------------------------------------End row------------- -->
+
+				<div class = "row"> <!-- ---------------------------------------------------Start row ------------- -->
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+					
+				</div> <!-- ---------------------------------------------------End row------------- -->
+
+				<div class = "row"> <!-- ---------------------------------------------------Start row ------------- -->
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+
+						</div>
+						
+					</div>
+
+					<div class = "col-md-4 projectBoxContainer">
+
+						<div class = "projectBox">
+
+							<div class = "projectLogoDiv">
+							</div>
+
+							<div class = "individualLayout">
+							</div>
+							
+						</div>
+						
+					</div>
+					
+				</div> <!-- ---------------------------------------------------End row------------- -->
+
+			</div> <!-- container endtag -->
 
 		</div> <!-- projectContainer endtag -->
 
@@ -364,7 +506,7 @@
 
 								<div id = "twitterDiv">
 
-									<a class="twitter-timeline" href="https://twitter.com/ku_503" data-widget-id="701542388532015104" width="500" height="300px" data-border-color="#000000">Tweets by @ku_503</a>
+									<a class="twitter-timeline" href="https://twitter.com/ku_503" data-widget-id="701542388532015104" aria-polite = "assertive" width="600" height="300px" data-border-color="#000000">Tweets by @ku_503</a>
 
 								</div>
 
@@ -387,7 +529,7 @@
 
 								<a class = "contactFontello icon-github-circled" id = "gitContact" href = "https://github.com/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
 
-								<a class = "contactFontello icon-mail" id = "mailContact" href = "mailto:rikuregis16@gmail.com" target="_blank" style="text-decoration: none;"></a>
+								<a class = "contactFontello icon-linkedin" id = "linkdContact" href = "https://www.linkedin.com/in/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
 
 								<a class = "contactFontello icon-gplus" id = "googleContact" href = "https://plus.google.com/u/0/100841507246558083003" target="_blank" style="text-decoration: none;"></a>
 							</div>
@@ -405,15 +547,19 @@
 <!-- __________________________________________________________________________ -->
 <!-- Scripts -->
 <!-- __________________________________________________________________________ -->
+		
 
-		<!-- Arrow Animation -->
-		<script type = "text/javascript"> 
-
-			$(".navArrow").hover(function() {
-    			$(this).animate({ marginTop: 300 });
-			})
-
-		</script> 
+		<script>
+ 
+    		$('.thumbnail').hover(
+        		function(){
+            		$(this).find('.caption').fadeIn(250); //.fadeIn(250)
+        		},
+        		function(){
+            		$(this).find('.caption').fadeOut(250); //.fadeOut(205)
+        		}
+    		); 
+		</script>
 
 		<!-- ScrollMe Script -->
 		<script src = "js/jquery.scrollme.min.js"></script> 

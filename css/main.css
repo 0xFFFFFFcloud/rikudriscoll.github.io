@@ -414,6 +414,14 @@ body,html{
 
 								}
 
+								.projectLogoDiv.javaMysqlLogo{
+
+									background-image: url(../images/projectLogos/java_mysql_logo.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
 								.projectLogoDiv.hadoopLogo{
 
 									background-image: url(../images/projectLogos/hadoopLogo.png); 
@@ -493,8 +501,14 @@ body,html{
 							padding: 0; 
 							margin: 0;
 							position: relative; 
-							top: -15px; 
+							top: -20px; 
 						}
+
+							.projectDescription > .longDescription {
+
+								font-size: 0.91em; 
+
+							}
 
 
 
@@ -737,7 +751,7 @@ body,html{
 
 	#projectContainer{
 
-		height: 230%; 
+		height: 335%; 
 
 	}
 
@@ -749,12 +763,7 @@ body,html{
 
 		}
 
-		/*row 3 doesn't have to be displayed (for now) because I don't have that many projects*/
-		#row3{
-
-			display: none; 
-
-		}
+		
 
 /*___________________________________________________CONTACT SECTION MOBILE */
 /*________________________________________________________________________*/

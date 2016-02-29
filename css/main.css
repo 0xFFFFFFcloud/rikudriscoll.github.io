@@ -172,7 +172,7 @@ body,html{
 			font-family: 'Alegreya Sans SC', sans-serif;
 			font-size: 4.7em;
 			font-weight: 500; 
-			letter-spacing: 8px;
+			letter-spacing: 9px;
 			top: 70px;
 			color: white; 
 			text-align: center; 
@@ -314,6 +314,18 @@ body,html{
 						font-weight: 600;
 					}
 
+						/*change default modal window position: center it*/
+						.modal-content {
+						   position: absolute;
+						   top: 70px;
+						   right: 100px;
+						   bottom: 0;
+						   left: 0;
+						   z-index: 10040;
+						   overflow: auto;
+						   overflow-y: auto;
+						}
+
 		#btmHorizantalDivider{
 
 			height: 5px !important;
@@ -327,7 +339,7 @@ body,html{
 
 	#projectContainer{
 
-		height: 100%;
+		height: 110%;
 		width: 100%;
 		text-align: center; 
 		font-size: 3em; 
@@ -357,13 +369,13 @@ body,html{
 				height: 160px !important;  
 				width: 100%;  
 				margin: 0 auto;
-				margin-bottom: 10px;
+				margin-bottom: 30px;
 			}
 
 				.projectBox{
 
-					height: 160px !important;  
-					width: 100%; 
+					height: 180px !important;  
+					width: 105%; 
 					margin: 0 auto;
 
 				}
@@ -375,8 +387,8 @@ body,html{
 					position: relative; 
 					top: 25%;
 
-					background-color: white; 
-					border-radius: 7px; 
+					background-color: #F4F5F6; 
+					border-radius: 6px; 
 
 					
 
@@ -384,13 +396,105 @@ body,html{
 					.projectLogoDiv{
 
 						height: 51%; 
-						width: 23%; 
+						width: 25.5%; 
 						position: absolute;
 						z-index: 1000;
-						left: 15%;
+						left: 10%;
+						border-radius: 3px;
 
-						background-color: cyan;
+						background-color: none;
+
 					}
+
+								.projectLogoDiv.pythonLogo{
+
+									background-image: url(../images/projectLogos/pythonLogo); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.hadoopLogo{
+
+									background-image: url(../images/projectLogos/hadoopLogo.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.goCodeLogo{
+
+									background-image: url(../images/projectLogos/goCodeLogo.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.tipsyTravelsLogo{
+
+									background-image: url(../images/projectLogos/tipsyTravelsLogo.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.wagnerInternationalLogo{
+
+									background-image: url(../images/projectLogos/wagner-international-logo.jpg); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.dot{
+
+									background-image: url(../images/projectLogos/dot.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+								.projectLogoDiv.haptubLogo{
+
+									background-image: url(../images/projectLogos/haptubLogo.png); 
+									background-size: contain; 
+									background-repeat: no-repeat;
+
+								}
+
+					.projectTitle{
+
+						text-align: right; 
+						padding-right: 5px; 
+						margin: 0 auto; 
+						color: 	#383838 ;
+						font-size: 1.1em; 
+						font-weight: 900;
+						font-family: 'Raleway', sans-serif; 
+						position: relative; 
+						top: 5px; 
+						width: auto; 
+
+					}
+
+					.projectDescription{
+
+						padding: 0px 5px 0px 5px; 
+						font-family: 'Raleway', sans-serif;
+						color: 	#383838 ;
+						font-size: 0.9em; 
+						position: relative; 
+						text-align: center; 
+						white-space: pre-line;
+					}
+
+						.projectDescription > p {
+
+							padding: 0; 
+							margin: 0;
+							position: relative; 
+							top: -15px; 
+						}
 
 
 
@@ -565,6 +669,7 @@ body,html{
 
 			    #titleBanner {
 			        font-size: 3.5em !important;
+			        letter-spacing: 7px;
 			    }
 
 			    .introBanner{
@@ -630,7 +735,26 @@ body,html{
 /*___________________________________________________PROJECT SECTION MOBILE */
 /*________________________________________________________________________*/
 
+	#projectContainer{
 
+		height: 230%; 
+
+	}
+
+		.projectBox{
+
+			height: 180px !important;  
+			width: 100%; 
+			margin: 0 auto;
+
+		}
+
+		/*row 3 doesn't have to be displayed (for now) because I don't have that many projects*/
+		#row3{
+
+			display: none; 
+
+		}
 
 /*___________________________________________________CONTACT SECTION MOBILE */
 /*________________________________________________________________________*/

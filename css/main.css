@@ -430,7 +430,7 @@ body,html{
 
 								}
 
-								.projectLogoDiv.goCodeLogo{
+								.projectLogoDiv.goCodeLogo{ 
 
 									background-image: url(../images/projectLogos/goCodeLogo.png); 
 									background-size: contain; 

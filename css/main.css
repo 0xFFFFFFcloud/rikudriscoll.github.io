@@ -541,8 +541,6 @@ body{
 			background-image: url(../img/mtHood.jpg);
 			background-size: cover; 
 			background-repeat: no-repeat;
-			max-width: 1920px; 
-			overflow: scroll;
 			background-position: center;
 			background-attachment: fixed; 
 			

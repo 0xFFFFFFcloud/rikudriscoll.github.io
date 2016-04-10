@@ -1,11 +1,12 @@
-<!DOCTYPE html> 
-<html> 
+<!DOCTYPE html>
 
-	<head> 
+<html>
 
-		<meta charset = "utf-8"/>
-		<meta name = "viewport" content = "width=device-width, initial-scale= 1"/>
-
+	<head>
+		
+		<meta charset="UTF-8">
+		<title></title>
+		
 		<!-- relevant link TAGS -->
 
 			<!-- MAIN.css -->
@@ -22,8 +23,8 @@
 				<link href='https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100' rel='stylesheet' type='text/css'>
 
 			<!-- Favicon -->
-				<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
-
+				<link rel="shortcut icon" type="image/png" href="img/favicon.png" />
+	
 		<!-- Bootstrap TAGS -->
 
 			<!-- import jquery from Google CDN -->
@@ -34,717 +35,720 @@
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 			<!-- Optional theme -->
 				<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+		
+	</head>
+	
+	<body>
+	
+		<div id = "wrapper"> 
+			
+			<section id = "londonBg">
+			
+				<div id = "overlay"> 
+				
+					<nav class = "nav navbar-inner"> 
+						<div class = "container-fluid navbar-locator"> 
+							<div class = "navbar-header">
 
-	</head> 
+								<button type = "button" class = "navbar-toggle collapsed button-locator" data-toggle = "collapse" data-target = "#mainNavBar">
+									<span class = "icon-bar"> </span> 
+									<span class = "icon-bar"> </span> 
+									<span class = "icon-bar"> </span> 
+								</button> 
 
-	<body> 	
+								<a href = "#" > <div id = "nameLogo"> </div> </a> 
 
-<!-- __________________________________________________________________________ -->
-<!-- Main Section-->
-<!-- __________________________________________________________________________ -->
+							</div> 
 
-		<div id = "londonBg"> 
-			<div id = "overlay"> 
-				<nav class = "nav navbar-inner"> 
-					<div class = "container-fluid navbar-locator"> 
-						<div class = "navbar-header">
+							<div class = "collapse navbar-collapse" id = "mainNavBar"> 
 
-							<button type = "button" class = "navbar-toggle collapsed button-locator" data-toggle = "collapse" data-target = "#mainNavBar">
-								<span class = "icon-bar"> </span> 
-								<span class = "icon-bar"> </span> 
-								<span class = "icon-bar"> </span> 
-							</button> 
+								<ul class = "nav navbar-nav menu-custom" id = "navContainer"> 
 
-							<a href = "#" > <div id = "nameLogo"> </div> </a> 
+								<!-- Home button has not practical use. just there to keep balance of the webpage as a whole -->
+									<li> <a  href = "./PDF/rikuCV2016.pdf" target="_blank"> RÉSUMÉ </a> </li> 
+									<li> <a  class = "page-scroll" href = "#profile"> WHERE I'VE BEEN </a> </li> 
+									<li> <a  class = "page-scroll" href = "#project"> PROJECTS </a> </li> 
+									<li> <a  class = "page-scroll withBorder" href = "#contact"> CONTACT </a> </li> 
 
-						</div> 
+								</ul> 
 
-						<div class = "collapse navbar-collapse" id = "mainNavBar"> 
-
-							<ul class = "nav navbar-nav menu-custom" id = "navContainer"> 
-
-							<!-- Home button has not practical use. just there to keep balance of the webpage as a whole -->
-								<li> <a  href = "./PDF/rikuCV2016.pdf" target="_blank"> RÉSUMÉ </a> </li> 
-								<li> <a  class = "page-scroll" href = "#indexContainer"> WHERE I'VE BEEN </a> </li> 
-								<li> <a  class = "page-scroll" href = "#projectContainer"> PROJECTS </a> </li> 
-								<li> <a  class = "page-scroll withBorder" href = "#contactContainer"> CONTACT </a> </li> 
-
-							</ul> 
-
-						</div> 
-
-					</div> 
-				</nav> 
-				<div class = "scrollme">
-
-					<div class = "animateme"
-							class="fittext animateme"
-							data-when="exit"
-							data-from="0"
-							data-to="0.75"
-							data-opacity="0"
-							data-translatey="-300"
-
-					 >
-						<div class = "container"> 
-
-							<div class ="row"> 
-								<div class = "col-md-6 col-md-offset-3" id = "titleBanner">
-									<span class = "increase-letter-size">W</span>ELCOME! 
-								</div> 
 							</div> 
 
 						</div> 
+					</nav>
+					
+					<div class = "scrollme">
 
-						<div class = "container"> 
+						<div class = "animateme"
+								class="fittext animateme"
+								data-when="exit"
+								data-from="0"
+								data-to="0.75"
+								data-opacity="0"
+								data-translatey="-350"
 
-							<div class ="row"> 
+						 >
+							<div class = "container"> 
+
+								<div class ="row"> 
+									<div class = "col-md-6 col-md-offset-3" id = "titleBanner">
+										<span class = "increase-letter-size">W</span>ELCOME! 
+									</div> 
+								</div> 
+
+							</div> 
+
+							<div class = "container"> 
+
+								<div class ="row"> 
+
+									<div class = "col-md-6 col-md-offset-3 introBanner">
+										<span class = "increase-letter-size">C</span>OMPUTER <span class = "increase-letter-size">S</span>CIENCE <span class = "increase-letter-size">S</span>TUDENT
+									</div> 
+
+								</div> 
+
+							</div> 
+
+							<div class = "container">
 
 								<div class = "col-md-6 col-md-offset-3 introBanner">
-									<span class = "increase-letter-size">C</span>OMPUTER <span class = "increase-letter-size">S</span>CIENCE <span class = "increase-letter-size">S</span>TUDENT
+										<span class = "increase-letter-size">M</span>OBILE <span class = "increase-letter-size">D</span>EVELOPER
 								</div> 
 
 							</div> 
 
-						</div> 
+							<div class = "container">
 
-						<div class = "container">
+								<div class = "col-md-6 col-md-offset-3 introBanner">
+										<span class = "increase-letter-size">W</span>EB <span class = "increase-letter-size">D</span>EVELOPER
+								</div> 
 
-							<div class = "col-md-6 col-md-offset-3 introBanner">
-									<span class = "increase-letter-size">M</span>OBILE <span class = "increase-letter-size">D</span>EVELOPER
-							</div> 
+							</div>
 
-						</div> 
+							<div class = "container">
 
-						<div class = "container">
+								<div class = "col-md-6 col-md-offset-3 introBanner">
+										<span class = "increase-letter-size">E</span>NTREPRENEUR 
+								</div> 
 
-							<div class = "col-md-6 col-md-offset-3 introBanner">
-									<span class = "increase-letter-size">W</span>EB <span class = "increase-letter-size">D</span>EVELOPER
-							</div> 
+							</div>
 
-						</div>
+						</div> <!--  class = "animateme" -->
 
-						<div class = "container">
+					</div> <!-- scrollme div -->
+			
 
-							<div class = "col-md-6 col-md-offset-3 introBanner">
-									<span class = "increase-letter-size">E</span>NTREPRENEUR 
-							</div> 
+					<div id = "arrowButton"> 
 
-						</div>
+						<a class = "page-scroll navArrow" href = "#contact" ><span class = "glyphicon glyphicon-chevron-down"></span></a>
 
-					</div> <!--  class = "animateme" -->
-
-				</div> <!-- scrollme div -->
-		
-
-				<div id = "arrowButton"> 
-
-					<a class = "page-scroll navArrow" href = "#indexContainer" ><span class = "glyphicon glyphicon-chevron-down"></span></a>
-
-				</div>
-
-
-			</div> <!-- "overlay" endtag -->
-
-		</div> <!-- "londonBg" endtag -->
-
+					</div>
+					
+				</div> 
+				
+			</section> 
+			
 <!-- __________________________________________________________________________ -->
 <!-- About Section-->
 <!-- __________________________________________________________________________ -->
 
+			<section id = "profile">
+			
+							<div class = "container-fluid">
 
-		<div id = "indexContainer">
+								<div class = "row"> 
 
-			<div class = "container-fluid">
+									<div class = "col-xs-6 col-md-6 col-xs-offset-3 col-md-offset-3" id = "portraitBanner">
 
-				<div class = "row"> 
+										<div id = "centerPositionContainer">
 
-					<div class = "col-xs-6 col-md-6 col-xs-offset-3 col-md-offset-3" id = "portraitBanner">
+											<div id = "portrait">
 
-						<div id = "centerPositionContainer">
+												<!-- My Signature -->
+												<div id = "mySignature">
+												</div>
 
-							<div id = "portrait">
+											</div>
 
-								<!-- My Signature -->
-								<div id = "mySignature">
+										</div>
+
+									</div>
+
+								</div>
+
+							</div> <!-- container-fluid endtag -->
+
+							<!-- Horizontal Divider -->
+							<div class = "container">
+
+								<div class = "row">
+
+									<div class = "col-md-10 col-md-offset-1">
+
+										<div class="hr_line"></div>
+
+									</div>
+
+								</div> 
+
+							</div> 
+
+							<!-- City "Squares" -->
+							<div class = "container-fluid" id = "cityBlocks">
+
+								<div class="row">
+
+										<div class="col-xs-6 col-md-3">
+
+													<div class="thumbnail">
+															<div class="caption">
+																
+																<!-- confusing naming convention, but class = "btn" resides in bootstrap -->
+																<a href = "#" class = "btn" data-toggle="modal" data-target="#shibuyaModal"> <span class = "cityName">TOKYO</span></a>
+													
+															</div>
+															<img src="./img/shibuya.jpg" alt="..." class="">
+													</div>
+											</div>
+
+										<div class="col-xs-6 col-md-3">
+
+													<div class="thumbnail">
+															<div class="caption">
+													
+																<a href = "#" class = "btn" data-toggle="modal" data-target="#portlandModal"> <span class = "cityName">PORTLAND, OR</span></a>
+													
+															</div>
+															<img src="./img/portland.PNG" alt="..." class="">
+													</div>
+											</div>
+
+										<div class="col-xs-6 col-md-3">
+
+													<div class="thumbnail">
+															<div class="caption">
+													
+																<a href = "#" class = "btn" data-toggle="modal" data-target="#seoulModal"> <span class = "cityName">SEOUL</span></a>
+													
+															</div>
+															<img src="./img/gyeongbokgung.jpg" alt="..." class="">
+													</div>
+											</div>
+
+										<div class="col-xs-6 col-md-3">
+
+													<div class="thumbnail">
+															<div class="caption">
+													
+																<a href = "#" class = "btn" data-toggle="modal" data-target="#denverModal"> <span class = "cityName">DENVER, CO</span></a>
+													
+															</div>
+															<img src="./img/redrocks.jpg" alt="..." class="">
+													</div>
+											</div>
+					
 								</div>
 
 							</div>
 
+							<!-- Horizontal Divider -->
+							<div class = "container">
+
+								<div class = "row">
+
+									<div class = "col-md-10 col-md-offset-1" id = "btmHorizantalDivider">
+
+										<div class="hr_line bottom"></div>
+
+									</div>
+
+								</div> 
+
+							</div> 
+
+
+				<!-- modal window for Sibuya (left most image) -->
+				<div class="modal fade" id="shibuyaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Tokyo, Japan</h4>
+							</div>
+							<div class="modal-body">
+
+								<p>Born and raised in Tokyo, Japan, I grew up playing sports and exploring the concrete jungle. Thinking back,  
+									having lived in Tokyo was a big reason why I became to love computer technology. Back then, I was always curious how train systems in Japan are so reliable and consistently on-time. Tokyo is a big part of who I am today. </p>
+
+							</div>
 						</div>
-
 					</div>
-
 				</div>
 
-			</div> <!-- container-fluid endtag -->
+				<!-- modal window for Portland (second from left) -->
+				<div class="modal fade" id="portlandModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Portland, Oregon USA</h4>
+							</div>
+							<div class="modal-body">
 
-			<!-- Horizontal Divider -->
-			<div class = "container">
+								<p>April 7th, 2006, my family and I moved to Portland, Oregon. I barely spoke English and when I did, I had a thick accent. No doubt, I was scared shitless (excuse me, but it's true). I couldn't communicate, and the language barrier was like no other. Having been able to communicate all your life and not knowing how to in the U.S., it was like working on a big project and coming across an error you don't recognize: You don't know how to patch it or improvise. 
+								It's frustrating and stressful.</p>
 
-				<div class = "row">
+								<p>Portland is full of interesting people and it has a unique culture. (Though, personally, it rains too much). Again, Portland is a big part of who I am today. </p>
 
-					<div class = "col-md-10 col-md-offset-1">
+								<p> P.S. If you are thinking of moving to Portland, don't. It's a crummy place (Portlanders will understand why I say this) </p>
 
-						<div class="hr_line"></div>
-
+							</div>
+						</div>
 					</div>
-
-				</div> 
-
-			</div> 
-
-			<!-- City "Squares" -->
-			<div class = "container-fluid" id = "cityBlocks">
-
-				<div class="row">
-
-  					<div class="col-xs-6 col-md-3">
-
-            			<div class="thumbnail">
-                			<div class="caption">
-                				
-                				<!-- confusing naming convention, but class = "btn" resides in bootstrap -->
-                				<a href = "#" class = "btn" data-toggle="modal" data-target="#shibuyaModal"> <span class = "cityName">TOKYO</span></a>
-                	
-                			</div>
-                			<img src="./images/shibuya.jpg" alt="..." class="">
-            			</div>
-        			</div>
-
-  					<div class="col-xs-6 col-md-3">
-
-            			<div class="thumbnail">
-                			<div class="caption">
-                	
-                				<a href = "#" class = "btn" data-toggle="modal" data-target="#portlandModal"> <span class = "cityName">PORTLAND, OR</span></a>
-                	
-                			</div>
-                			<img src="./images/portland.PNG" alt="..." class="">
-            			</div>
-        			</div>
-
-  					<div class="col-xs-6 col-md-3">
-
-            			<div class="thumbnail">
-                			<div class="caption">
-                	
-                				<a href = "#" class = "btn" data-toggle="modal" data-target="#seoulModal"> <span class = "cityName">SEOUL</span></a>
-                	
-                			</div>
-                			<img src="./images/gyeongbokgung.jpg" alt="..." class="">
-            			</div>
-        			</div>
-
-  					<div class="col-xs-6 col-md-3">
-
-            			<div class="thumbnail">
-                			<div class="caption">
-                	
-                				<a href = "#" class = "btn" data-toggle="modal" data-target="#denverModal"> <span class = "cityName">DENVER, CO</span></a>
-                	
-                			</div>
-                			<img src="./images/redrocks.jpg" alt="..." class="">
-            			</div>
-        			</div>
-  
 				</div>
 
-			</div>
+				<div class="modal fade" id="seoulModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Seoul, South Korea</h4>
+							</div>
+							<div class="modal-body">
 
-			<!-- Horizontal Divider -->
-			<div class = "container">
+								<p>Skipping time a tad bit, in Fall 2014 I started school at Korea University in Anam-dong, Seoul. Aside from meeting cool people and making international friends, I got to emerse myself in omnipresent Free public wifi! (Which was more reliable than my uni. wifi... That's amazing, but sad at the same time). </p>
 
-				<div class = "row">
+								<p>As a student abroad, I wanted to know how they teach programming in their higher education. Nothing special nor different from the U.S. BUT Korean students are more talented overall. This motivated me to start a project and spend more time practicing code. </p>
 
-					<div class = "col-md-10 col-md-offset-1" id = "btmHorizantalDivider">
+								<p>In my opinion, traveling makes you smarter because you constantly surround yourself with worldviews. More importantly, you actively put yourself in an inferior position, which makes you think empathetically. To me, this is important because being empathetic (whether solving problems or designing) forces you to think creatively. Spending money on experiences like traveling is better than material goods because it's not something you can search on Google. </p>
 
-						<div class="hr_line bottom"></div>
+								<p>TipsyTravels.com was a forum I started in attempt to share this philosophy. </p>
 
+							</div>
+						</div>
 					</div>
+				</div>
 
-				</div> 
+				<div class="modal fade" id="denverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					<div class="modal-dialog" role="document">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+								<h4 class="modal-title" id="myModalLabel">Denver, Colorado USA</h4>
+							</div>
+							<div class="modal-body">
 
-			</div> 
+								<p>I'm not the type of person who finds rain to be therapeutic. For me, traveling is therapeutic and the best feeling is when I'm on a plane knowing I will land somewhere new.</p> 
 
-		</div> <!-- indexContainer endtag -->
+								<p> I love the sun and bouldering, so Denver was a perfect location for me. </p>
+								<p>Currently attending Regis University in Denver, I'm majoring in Computer Science and minoring in Math. (Graduating on the 1st of May). I enjoy working collaboratively and making functional software that solves a problem creatively. I especially enjoy brainstorming ideas because it's stimulating and inspirational. </p>
 
+								<p>Intrinsically motivated, I love learning new technologies, from software development to cooking, cultures to web UX design. My recent youtube therapy has been learning about Molecular Gastronomy, which is oddly satisfying to see and fun to learn. </p>
 
-<!-- modal window for Sibuya (left most image) -->
-<div class="modal fade" id="shibuyaModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Tokyo, Japan</h4>
-      </div>
-      <div class="modal-body">
+							</div>
+						</div>
+					</div>
+				</div>
 
-        <p>Born and raised in Tokyo, Japan, I grew up playing sports and exploring the concrete jungle. Thinking back,  
-        	having lived in Tokyo was a big reason why I became to love computer technology. Back then, I was always curious how train systems in Japan are so reliable and consistently on-time. Tokyo is a big part of who I am today. </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<!-- modal window for Portland (second from left) -->
-<div class="modal fade" id="portlandModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Portland, Oregon USA</h4>
-      </div>
-      <div class="modal-body">
-
-        <p>April 7th, 2006, my family and I moved to Portland, Oregon. I barely spoke English and when I did, I had a thick accent. No doubt, I was scared shitless (excuse me, but it's true). I couldn't communicate, and the language barrier was like no other. Having been able to communicate all your life and not knowing how to in the U.S., it was like working on a big project and coming across an error you don't recognize: You don't know how to patch it or improvise. 
-        It's frustrating and stressful.</p>
-
-        <p>Portland is full of interesting people and it has a unique culture. (Though, personally, it rains too much). Again, Portland is a big part of who I am today. </p>
-
-        <p> P.S. If you are thinking of moving to Portland, don't. It's a crummy place (Portlanders will understand why I say this) </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="seoulModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Seoul, South Korea</h4>
-      </div>
-      <div class="modal-body">
-
-        <p>Skipping time a tad bit, in Fall 2014 I started school at Korea University in Anam-dong, Seoul. Aside from meeting cool people and making international friends, I got to emerse myself in omnipresent Free public wifi! (Which was more reliable than my uni. wifi... That's amazing, but sad at the same time). </p>
-
-        <p>As a student abroad, I wanted to know how they teach programming in their higher education. Nothing special nor different from the U.S. BUT Korean students are more talented overall. This motivated me to start a project and spend more time practicing code. </p>
-
-        <p>In my opinion, traveling makes you smarter because you constantly surround yourself with worldviews. More importantly, you actively put yourself in an inferior position, which makes you think empathetically. To me, this is important because being empathetic (whether solving problems or designing) forces you to think creatively. Spending money on experiences like traveling is better than material goods because it's not something you can search on Google. </p>
-
-        <p>TipsyTravels.com was a forum I started in attempt to share this philosophy. </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
-<div class="modal fade" id="denverModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Denver, Colorado USA</h4>
-      </div>
-      <div class="modal-body">
-
-        <p>I'm not the type of person who finds rain to be therapeutic. For me, traveling is therapeutic and the best feeling is when I'm on a plane knowing I will land somewhere new.</p> 
-
-        <p> I love the sun and bouldering, so Denver was a perfect location for me. </p>
-        <p>Currently attending Regis University in Denver, I'm majoring in Computer Science and minoring in Math. (Graduating on the 1st of May). I enjoy working collaboratively and making functional software that solves a problem creatively. I especially enjoy brainstorming ideas because it's stimulating and inspirational. </p>
-
-        <p>Intrinsically motivated, I love learning new technologies, from software development to cooking, cultures to web UX design. My recent youtube therapy has been learning about Molecular Gastronomy, which is oddly satisfying to see and fun to learn. </p>
-
-      </div>
-    </div>
-  </div>
-</div>
-
+			</section>
+			
 <!-- __________________________________________________________________________ -->
 <!-- Project Section-->
 <!-- __________________________________________________________________________ -->
 
-		<div id = "projectContainer">
+			<section id = "project">
 
-			<div id = "projectTitle"> 
+							<div id = "projectTitle"> 
 
-				PROJECTS
+								PROJECTS
 
-			</div> 
+							</div> 
 
-			<div class = "container" id = "projectListContainer"> 
+							<div class = "container" id = "projectListContainer"> 
 
-				<div class = "row" id = "row1"> <!-- ---------------------------------------------------Start row ------------- -->
+								<div class = "row" id = "row1"> <!-- ---------------------------------------------------Start row ------------- -->
 
-					<div class = "col-md-4 projectBoxContainer">
+									<div class = "col-md-4 col-lg-4 projectBoxContainer">
 
-						<div class = "projectBox">
+										<div class = "projectBox">
 
-							<a href = "https://github.com/rikudriscoll/HapTub" target= "_blank">
+											<a href = "https://github.com/rikudriscoll/HapTub" target= "_blank">
 
-								<div class = "btn projectLogoDiv haptubLogo">
-								</div>
+												<div class = "btn projectLogoDiv haptubLogo">
+												</div>
 
-							</a>
+											</a>
 
-							<a href = "https://github.com/rikudriscoll/HapTub" target= "_blank">
+											<a href = "https://github.com/rikudriscoll/HapTub" target= "_blank">
 
-								<div class = "btn individualLayout">
+												<div class = "btn individualLayout">
 
-									<div class = "projectTitle">
-										HAPTUB
+													<div class = "projectTitle">
+														HAPTUB
+													</div>
+
+													<div class = "projectDescription">
+
+														<p class = "longDescription">An Android blogging app made of extensible architecture that incorporates TDD, Factory Pattern, Separated Interface Pattern and more. Focused on Functional design with four layers: Presentation, Business, Service and Domain. </p>
+
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
 									</div>
 
-									<div class = "projectDescription">
+									<div class = "col-md-4 projectBoxContainer">
 
-										<p class = "longDescription">An Android blogging app made of extensible architecture that incorporates TDD, Factory Pattern, Separated Interface Pattern and more. Focused on Functional design with four layers: Presentation, Business, Service and Domain. </p>
+										<div class = "projectBox">
 
+											<a href = "https://github.com/rikudriscoll/MyBlog" target = "_blank">
+
+												<div class = "btn projectLogoDiv javaMysqlLogo">
+												</div>
+
+											</a>
+
+											<a href = "https://github.com/rikudriscoll/MyBlog" target = "_blank">
+
+												<div class = "btn individualLayout">
+
+													<div class = "projectTitle">
+														Java + MySQL Project
+													</div>
+
+													<div class = "projectDescription">
+
+														<p class = "longDescription">A blogging platform using Java in NetBeans. Worked on this project with update and maintainability in mind. It is built on an extensible design with four layers and implements the Separated Interface Pattern, TDD and more. 
+														</p>
+
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
 									</div>
 
-								</div>
+									<div class = "col-md-4 projectBoxContainer">
 
-							</a>
+										<div class = "projectBox">
 
-						</div>
-						
-					</div>
+											<a href = "#" onclick="return false;" target = "_blank">
 
-					<div class = "col-md-4 projectBoxContainer">
+												<div class = "btn projectLogoDiv pythonLogo">
+												</div>
 
-						<div class = "projectBox">
+											</a>
 
-							<a href = "https://github.com/rikudriscoll/MyBlog" target = "_blank">
+											<a href = "#" onclick="return false;" target = "_blank">
 
-								<div class = "btn projectLogoDiv javaMysqlLogo">
-								</div>
+												<div class = "btn individualLayout">
 
-							</a>
+													<div class = "projectTitle">
+														Python Reverse SSH
+													</div>
 
-							<a href = "https://github.com/rikudriscoll/MyBlog" target = "_blank">
+													<div class = "projectDescription">
 
-								<div class = "btn individualLayout">
+														<p> A fun, self taught project that I most enjoyed doing it. Used Python's socket library to make a connection with another computer. Then used Bash commands control it.</p>
 
-									<div class = "projectTitle">
-										Java + MySQL Project
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
 									</div>
 
-									<div class = "projectDescription">
+								</div> <!-- ---------------------------------------------------End row------------- -->
 
-										<p class = "longDescription">A blogging platform using Java in NetBeans. Worked on this project with update and maintainability in mind. It is built on an extensible design with four layers and implements the Separated Interface Pattern, TDD and more. 
-										</p>
+								<div class = "row" id = "row2"> <!-- ----------------------------------------------Start row ------------- -->
 
-									</div>
+									<div class = "col-md-4 projectBoxContainer">
 
-								</div>
+										<div class = "projectBox">
 
-							</a>
+											<a href = "http://tipsytravels.com" target= "_blank">
 
-						</div>
-						
-					</div>
+												<div class = "btn projectLogoDiv tipsyTravelsLogo">
+												</div>
 
-					<div class = "col-md-4 projectBoxContainer">
+											</a>
 
-						<div class = "projectBox">
+											<a href = "http://tipsytravels.com" target= "_blank">
 
-							<a href = "#" onclick="return false;" target = "_blank">
+												<div class = "btn individualLayout">
 
-								<div class = "btn projectLogoDiv pythonLogo">
-								</div>
+													<div class = "projectTitle">
+														TipsyTravels.com
+													</div>
 
-							</a>
+													<div class = "projectDescription">
 
-							<a href = "#" onclick="return false;" target = "_blank">
+														<p> Driven by my passion for traveling, I made a simple Question-Answer platform, where student travelers can share their genuine experiences. </p>
+													</div>
 
-								<div class = "btn individualLayout">
+												</div>
 
-									<div class = "projectTitle">
-										Python Reverse SSH
-									</div>
+											</a>
 
-									<div class = "projectDescription">
-
-										<p> A fun, self taught project that I most enjoyed doing it. Used Python's socket library to make a connection with another computer. Then used Bash commands control it.</p>
-
-									</div>
-
-								</div>
-
-							</a>
-
-						</div>
-						
-					</div>
-
-				</div> <!-- ---------------------------------------------------End row------------- -->
-
-				<div class = "row" id = "row2"> <!-- ----------------------------------------------Start row ------------- -->
-
-					<div class = "col-md-4 projectBoxContainer">
-
-						<div class = "projectBox">
-
-							<a href = "http://tipsytravels.com" target= "_blank">
-
-								<div class = "btn projectLogoDiv tipsyTravelsLogo">
-								</div>
-
-							</a>
-
-							<a href = "http://tipsytravels.com" target= "_blank">
-
-								<div class = "btn individualLayout">
-
-									<div class = "projectTitle">
-										TipsyTravels.com
-									</div>
-
-									<div class = "projectDescription">
-
-										<p> Driven by my passion for traveling, I made a simple Question-Answer platform, where student travelers can share their genuine experiences. </p>
-									</div>
-
-								</div>
-
-							</a>
-
-						</div>
-
-					</div>
-
-					<div class = "col-md-4 projectBoxContainer">
-
-						<div class = "projectBox">
-
-							<a href = "" onclick="return false;" target= "_blank">
-
-								<div class = "btn projectLogoDiv hadoopLogo">
-								</div>
-
-							</a>
-
-							<a href = "" onclick="return false;" target = "_blank">
-
-								<div class = "btn individualLayout">
-
-									<div class = "projectTitle" >
-										Recommender System
-									</div>
-
-									<div class = "projectDescription"> 
-
-										<p> I love discovering new technologies, so I made a simple recommender system on my spare time, inspired by Amazon and YouTube's "Recommended" section.</p>
+										</div>
 
 									</div>
 
-								</div>
+									<div class = "col-md-4 projectBoxContainer">
 
-							</a>
+										<div class = "projectBox">
 
-						</div>
-						
-					</div>
+											<a href = "" onclick="return false;" target= "_blank">
 
-					<div class = "col-md-4 projectBoxContainer">
+												<div class = "btn projectLogoDiv hadoopLogo">
+												</div>
 
-						<div class = "projectBox">
+											</a>
 
-							<a href = "https://www.freelancer.com/u/rikuatblue777.html" target = "_blank">
+											<a href = "" onclick="return false;" target = "_blank">
 
-								<div class = "btn projectLogoDiv wagnerInternationalLogo">
-								</div>
+												<div class = "btn individualLayout">
 
-							</a>
+													<div class = "projectTitle" >
+														Recommender System
+													</div>
 
-							<a href = "https://www.freelancer.com/u/rikuatblue777.html" target = "_blank">
+													<div class = "projectDescription"> 
 
-								<div class = "btn individualLayout">
+														<p> I love discovering new technologies, so I made a simple recommender system on my spare time, inspired by Amazon and YouTube's "Recommended" section.</p>
 
-									<div class = "projectTitle">
-										Wagner Consulting Int'l 
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
 									</div>
 
-									<div class = "projectDescription">
+									<div class = "col-md-4 projectBoxContainer">
 
-										<p>I've found out Freelancing is more lucrative. So I started editing HTML code, translating documents from Japanese to English and making informative websites for others</p>
+										<div class = "projectBox">
 
+											<a href = "https://www.freelancer.com/u/rikuatblue777.html" target = "_blank">
+
+												<div class = "btn projectLogoDiv wagnerInternationalLogo">
+												</div>
+
+											</a>
+
+											<a href = "https://www.freelancer.com/u/rikuatblue777.html" target = "_blank">
+
+												<div class = "btn individualLayout">
+
+													<div class = "projectTitle">
+														Wagner Consulting Int'l 
+													</div>
+
+													<div class = "projectDescription">
+
+														<p>I've found out Freelancing is more lucrative. So I started editing HTML code, translating documents from Japanese to English and making informative websites for others</p>
+
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
+									</div>
+									
+								</div> <!-- ---------------------------------------------------End row------------- -->
+
+								<div class = "row" id = "row3"> <!-- ----------------------------------------------Start row ------------- -->
+
+									<div class = "col-md-4 projectBoxContainer">
+
+										<div class = "projectBox">
+
+											<a href = "http://gocode.colorado.gov/about/" target = "_blank">
+
+												<div class = "btn projectLogoDiv goCodeLogo">
+												</div>
+
+											</a>
+
+											<a href = "http://gocode.colorado.gov/about/" target = "_blank">
+
+												<div class = "btn individualLayout">
+
+													<div class = "projectTitle">
+														Go Code Colorado
+													</div>
+
+													<div class = "projectDescription">
+
+														<p >Go Code Colorado is a competition driven by Open Data. Collaborating with a team of faculty and students, we are working hard to compete alongside experienced developers. <br/> (CURRENT)</p>
+
+													</div>
+
+												</div>
+
+											</a>
+
+										</div>
+										
 									</div>
 
-								</div>
+									<div class = "col-md-4 projectBoxContainer">
 
-							</a>
+										<div class = "projectBox">
 
-						</div>
-						
-					</div>
-					
-				</div> <!-- ---------------------------------------------------End row------------- -->
+											<div class = "projectLogoDiv dot">
+											</div>
 
-				<div class = "row" id = "row3"> <!-- ----------------------------------------------Start row ------------- -->
+											<div class = "individualLayout">
 
-					<div class = "col-md-4 projectBoxContainer">
+												<div class = "projectTitle">
+													...
+												</div>
 
-						<div class = "projectBox">
+												<div class = "projectDescription">
+												</div>
 
-							<a href = "http://gocode.colorado.gov/about/" target = "_blank">
+											</div>
 
-								<div class = "btn projectLogoDiv goCodeLogo">
-								</div>
-
-							</a>
-
-							<a href = "http://gocode.colorado.gov/about/" target = "_blank">
-
-								<div class = "btn individualLayout">
-
-									<div class = "projectTitle">
-										Go Code Colorado
+										</div>
+										
 									</div>
 
-									<div class = "projectDescription">
+									<div class = "col-md-4 projectBoxContainer">
 
-										<p >Go Code Colorado is a competition driven by Open Data. Collaborating with a team of faculty and students, we are working hard to compete alongside experienced developers. <br/> (CURRENT)</p>
+										<div class = "projectBox">
 
+											<div class = "projectLogoDiv dot">
+											</div>
+
+											<div class = "individualLayout">
+
+												<div class = "projectTitle">
+													...
+												</div>
+
+												<div class = "projectDescription">
+												</div>
+
+											</div>
+
+										</div>
+										
 									</div>
+									
+								</div> <!-- ---------------------------------------------------End row------------- -->
 
-								</div>
+							</div> <!-- container endtag -->
 
-							</a>
-
-						</div>
-						
-					</div>
-
-					<div class = "col-md-4 projectBoxContainer">
-
-						<div class = "projectBox">
-
-							<div class = "projectLogoDiv dot">
-							</div>
-
-							<div class = "individualLayout">
-
-								<div class = "projectTitle">
-									...
-								</div>
-
-								<div class = "projectDescription">
-								</div>
-
-							</div>
-
-						</div>
-						
-					</div>
-
-					<div class = "col-md-4 projectBoxContainer">
-
-						<div class = "projectBox">
-
-							<div class = "projectLogoDiv dot">
-							</div>
-
-							<div class = "individualLayout">
-
-								<div class = "projectTitle">
-									...
-								</div>
-
-								<div class = "projectDescription">
-								</div>
-
-							</div>
-
-						</div>
-						
-					</div>
-					
-				</div> <!-- ---------------------------------------------------End row------------- -->
-
-			</div> <!-- container endtag -->
-
-		</div> <!-- projectContainer endtag -->
-
+			</section> 
+		
 <!-- __________________________________________________________________________ -->
 <!-- Contact Section-->
 <!-- __________________________________________________________________________ -->
 
-		<div id = "contactContainer">
+			<section id = "contact"> 
 
-			<div id = "blackOverlay">
+									<div id = "blackOverlay">
 
-				<div id = "sayHi">
-					Say Hi...
-				</div>
+										<div id = "sayHi">
+											Say Hi...
+										</div>
 
-				<div class = "container-fluid"> 
+										<div class = "container-fluid"> 
 
-					<div class = "row">
+											<div class = "row">
 
-						<div class = "col-md-6 col-md-offset-3">
-						
-							<div id = "twitterDivContainer">
+												<div class = "col-md-6 col-md-offset-3">
+												
+													<div id = "twitterDivContainer">
 
-								<div id = "twitterDiv">
+														<div id = "twitterDiv">
 
-									<a class="twitter-timeline" href="https://twitter.com/ku_503" data-widget-id="701542388532015104" aria-polite = "assertive" width="600" height="300px" data-border-color="#000000">Tweets by @ku_503</a>
+															<a class="twitter-timeline" href="https://twitter.com/ku_503" data-widget-id="701542388532015104" aria-polite = "assertive" width="600" height="300px" data-border-color="#000000">Tweets by @ku_503</a>
 
-								</div>
+														</div>
 
-							</div>
+													</div>
 
-						</div> 
+												</div> 
 
-					</div> <!-- row endtag -->
+											</div> <!-- row endtag -->
 
-				</div> <!--  twitter embbed bootstrap container endtag -->
+										</div> <!--  twitter embbed bootstrap container endtag -->
 
-				<div class = "container-fluid" id = "fontelloContainer">
+										<div class = "container-fluid" id = "fontelloContainer">
 
-					<div class = "row">
+											<div class = "row">
 
-						<div class = "col-md-6 col-md-offset-3">
+												<div class = "col-md-6 col-md-offset-3">
 
-							<div id = "fontelloDiv">
-								<a class = "contactFontello icon-twitter" id = "twitterContact" href = "https://twitter.com/ku_503" target="_blank" style="text-decoration: none;"></a>
+													<div id = "fontelloDiv">
+														<a class = "contactFontello icon-twitter" id = "twitterContact" href = "https://twitter.com/ku_503" target="_blank" style="text-decoration: none;"></a>
 
-								<a class = "contactFontello icon-github-circled" id = "gitContact" href = "https://github.com/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
+														<a class = "contactFontello icon-github-circled" id = "gitContact" href = "https://github.com/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
 
-								<a class = "contactFontello icon-linkedin" id = "linkdContact" href = "https://www.linkedin.com/in/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
+														<a class = "contactFontello icon-linkedin" id = "linkdContact" href = "https://www.linkedin.com/in/rikudriscoll" target="_blank" style="text-decoration: none;"></a>
 
-								<a class = "contactFontello icon-gplus" id = "googleContact" href = "https://plus.google.com/u/0/100841507246558083003" target="_blank" style="text-decoration: none;"></a>
-							</div>
+														<a class = "contactFontello icon-gplus" id = "googleContact" href = "https://plus.google.com/u/0/100841507246558083003" target="_blank" style="text-decoration: none;"></a>
+													</div>
 
-						</div>
+												</div>
 
-					</div>
+											</div>
 
-				</div>
+										</div>
 
-			</div> <!-- id = greyOverlay endtag -->
+									</div> <!-- id = greyOverlay endtag -->
+								
+			</section> 
+			
+		</div> <!-- wrapper div closing tag -->
 
-		</div> <!-- id = contactContainer endtag -->
-
+		
 <!-- __________________________________________________________________________ -->
 <!-- Scripts -->
 <!-- __________________________________________________________________________ -->
-		
-		<!-- Grey shadow when hover on photo -->
-		<script>
+				
+				<!-- Grey shadow when hover on photo -->
+				<script>
+		 
+		    		$('.thumbnail').hover(
+		        		function(){
+		            		$(this).find('.caption').fadeIn(250); //.fadeIn(250)
+		        		},
+		        		function(){
+		            		$(this).find('.caption').fadeOut(250); //.fadeOut(205)
+		        		}
+		    		); 
+				</script>
+
+				<!-- ScrollMe Script -->
+				<script src = "js/jquery.scrollme.min.js"></script> 
+
+				<!-- Scrolling Nav JavaScript -->
+				<script src="js/jquery.easing.min.js"></script>
+		    	<script src="js/scrolling-nav.js"></script>
+
+		    	<!-- Twitter Embbeded Script -->
+		    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
  
-    		$('.thumbnail').hover(
-        		function(){
-            		$(this).find('.caption').fadeIn(250); //.fadeIn(250)
-        		},
-        		function(){
-            		$(this).find('.caption').fadeOut(250); //.fadeOut(205)
-        		}
-    		); 
-		</script>
-
-		<!-- ScrollMe Script -->
-		<script src = "js/jquery.scrollme.min.js"></script> 
-
-		<!-- Scrolling Nav JavaScript -->
-		<script src="js/jquery.easing.min.js"></script>
-    	<script src="js/scrolling-nav.js"></script>
-
-    	<!-- Twitter Embbeded Script -->
-    	<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-
-	</body> 
-
-</html> 
+		
+	</body>
+	
+</html>

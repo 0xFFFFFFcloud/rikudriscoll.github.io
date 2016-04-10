@@ -1,630 +1,637 @@
-body,html{
-
+html{
+	
 	height: 100%; 
 	width: 100%; 
+	margin: 0; 
 	background-color: rgba(42,42,42, 1)  !important;
+	
 }
 
-@media screen and (max-width: 1440px) {
+body{
+	
+	background-color: grey; 
+	height: 100%; 
+	width: 100%; 
+	margin: 0; 
+	
+}
 
+	#wrapper{
+		
+		height: 100%; 
+		width: 100%; 
+		margin: 0; 
+		
+	}
+	
+		section{
+			
+			height: 100%; 
+			width: 100%; 
+			
+		}
+		
 /*__________________________________________________________MAIN SECTION */
 /*________________________________________________________________________*/
 
-	#londonBg {
-		height: 100%; 
-		width: 100%; 
-		background-image: url(../images/doubledeck_small.jpg); 
-		background-size:100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		overflow: hidden; 
-		background-attachment: fixed; 
-		max-width: 1920px;
-
-	}
+		#londonBg{
+			
+			background-image: url("../img/doubledeck_small.jpg"); 
+			background-repeat: no-repeat; 
+			background-size: cover;
+			background-position: center;
+			background-attachment: fixed; 
+			margin: 0; 
+			
+			
+		}
 		
-		#overlay{
+			#overlay{
 
-			height: 100%; 
-			width: 100%; 
-			background-color: rgba(0,0,0,0.66);
-		}
-
-		.navbar-inner {
-
-	    	background:transparent;
-
-		}	
-
-			#nameLogo{
-
-				height: 140px; 
-				width: 140px; 
-				background-image: url(../images/logoRiku.png); 
-				background-size: cover; 
-				background-repeat: no-repeat;
-				position: relative; 
-				margin-left: 25px;
+				height: 100%; 
+				width: 100%; 
+				background-color: rgba(0,0,0,0.64);
+				overflow: hidden; 
 			}
+			
+				.navbar-inner {
 
+					    	background:transparent;
 
-			.navbar-locator{
+						}	
 
-				position: relative !important; 
-				top: 30px;
+							#nameLogo{
 
-			}
+								height: 150px; 
+								width: 150px; 
+								background-image: url(../img/logoRiku.png); 
+								background-size: cover; 
+								background-repeat: no-repeat;
+								position: relative; 
+								margin-left: 25px;
+							}
 
-			.menu-custom{
 
-				float: right !important;
-				letter-spacing: 3px;
-				position: relative; 
-				top: 15px;
+							.navbar-locator{
 
-			}
+								position: relative !important; 
+								top: 30px;
 
-			.button-locator{
+							}
 
-				position: relative; 
-				top: 45px; 
-				right: 20px;
-			}
+							.menu-custom{
 
-				.menu-custom > li{
+								float: right !important;
+								letter-spacing: 3px;
+								position: relative; 
+								top: 15px;
 
-					padding-right: 10px;
+							}
 
-				}
+							.button-locator{
 
-				/* Change default text color (blue) to white AND change font */
-				.menu-custom > li > a{
+								position: relative; 
+								top: 45px; 
+								right: 20px;
+							}
 
-					font-family: 'Courier New';
-					color: #D0D0D0  !important;
-					position: relative !important; 
-					top: 30px;
-				}
+								.menu-custom > li{
 
-				/*Override default background color on hover (make it any color, then set the opacity to zero*/
-				.navbar-inner .navbar-nav > li > a:hover, .navbar-inner .navbar-nav > li > a:focus {
-	   				background-color: transparent !important;
-	    			color: white !important;
-				}
-
-					.withBorder{
-
-						border: 2px solid white;
-						overflow: hidden; 
-
-					}
-
-						.navbar-inner .navbar-nav > li > .withBorder:hover{
-
-							background-color: white !important; 
-							color: black !important;
-
-						}
-
-						.withBorder:after {
-						  content: '';
-						  display: block;
-						  position: absolute;
-						  left: 50%;
-						  top: 50%;
-						  width: 120px;
-						  height: 120px;
-						  margin-left: -60px; /*positioning "ripple"*/
-						  margin-top: -60px; /*positioning "ripple"*/
-						  background: cyan;
-						  border-radius: 100%;
-						  opacity: .6;
-
-						  transform: scale(0);
-						}
-
-						@keyframes ripple {
-						  0% {
-						    transform: scale(0);
-						  }
-						  20% {
-						    transform: scale(1);
-						  }
-						  100% {
-						    opacity: 0;
-						    transform: scale(1);
-						  }
-						}
-
-						.withBorder:not(:active):after {
-						  animation: ripple 1s ease-out;
-						}
-
-						/* fixes initial animation run, without user input, on page load.
-						 */
-						.withBorder:after {
-						  visibility: hidden;
-						}
-
-						.withBorder:focus:after {
-						  visibility: visible;
-						} 
-
-
-			/*The navbar is transparent so icon-bars are transparent. 
-			Display icon-bars*/
-			.navbar-toggle .icon-bar {
-			    display: block;
-			    width: 22px;
-			    height: 2px;
-			    border-radius: 1px;
-			    background-color: #ffffff;
-			}
-
-
-
-		#titleBanner{
-
-			position: relative; 
-			font-family: 'Alegreya Sans SC', sans-serif;
-			font-size: 4.7em;
-			font-weight: 500; 
-			letter-spacing: 9px;
-			top: 70px;
-			color: white; 
-			text-align: center; 
-
-		}
-
-		.increase-letter-size{
-
-			font-size: 1.4em;
-
-		}
-
-		.introBanner{
-
-			color: white; 
-			position: relative; 
-			font-family: 'Alegreya Sans SC', sans-serif;
-			top: 50px;
-			text-align: center; 
-			font-size: 1.2em;
-			letter-spacing: 3px;
-
-		}
-
-		#arrowButton{
-
-			height: 60px;
-			width: 60px; 
-			text-align: center; 
-			margin: 0 auto;
-			position: relative; 
-			top: 180px;
-			font-size: 3em;
-
-
-		}
-			#arrowButton > a {
-				color: #C0C0C0  ;
-			}
-
-
-/*__________________________________________________________ABOUT SECTION */
-/*________________________________________________________________________*/
-
-	#indexContainer{
-
-		height: 95%; 
-		width: 100%; 
-		background-color: rgba(255,255,255, 0.86);
-		overflow: auto; 
-
-	}
-
-		#portraitBanner{
-
-			position: relative; 
-			top: 55px; 
-
-		}
-
-			#centerPositionContainer{
-
-				margin: 0 auto; 
-				height: 100px;
-				width: 300px;
-
-			}
-
-				#portrait{
-
-					height: 140px;
-					width: 149px; 
-					background-image: url(../images/portrait.png); 
-					background-size: contain; 
-					background-repeat: no-repeat;
-
-				}	
-
-					#mySignature{
-
-						height: 120px; 
-						width: 200px;
-						position: relative; 
-						background-image: url(../images/signature_min_black.png); 
-						background-size: cover; 
-						background-repeat: no-repeat;
-						top: 10px; 
-						left: 130px;
-
-					}
-
-
-		.hr_line { 
-			position: relative; 
-			top: 100px;
-	   		margin: 25px 0;
-	    	height: 1px;
-	    	background: black;
-	    	background: -webkit-gradient(linear, 0 0, 100% 0, from(#C8C8C8), to(#C8C8C8), color-stop(50%, black));
-		}
-
-		#cityBlocks{
-
-			position: relative; 
-			top: 120px; 
-
-		}
-			.thumbnail {
-   				position:relative;
-    			overflow:hidden;
-			}
- 
-			.caption {
-			    position:absolute;
-			    top:0;
-			    right:0;
-			    background:rgba(0, 0, 0, 0.55);
-			    width:100%;
-			    height:100%;
-			    padding:2%;
-			    display: none;
-			    text-align: left;
-			    color:#fff !important;
-			    z-index:2;
-			}
-
-				.btn{
-					height: 100%; 
-					width: 100%; 
-				}
-
-					.cityName{
-						color: white; 
-						font-family: 'Alegreya Sans SC', sans-serif;
-						letter-spacing: 3px; 
-						position: relative; 
-						top: 110px; 
-						font-size: 1.3em;
-						font-weight: 600;
-					}
-
-						/*change default modal window position: center it*/
-						.modal-content {
-						   position: absolute;
-						   top: 70px;
-						   right: 100px;
-						   bottom: 0;
-						   left: 0;
-						   z-index: 10040;
-						   overflow: auto;
-						   overflow-y: auto;
-						}
-
-		#btmHorizantalDivider{
-
-			height: 5px !important;
-			top: 25px !important;  
-
-		}
-
-/*__________________________________________________________PROJECT SECTION */
-/*_________________________________________________________________________*/
-	
-
-	#projectContainer{
-
-		height: 110%;
-		width: 100%;
-		text-align: center; 
-		font-size: 3em; 
-		color: white;
-		font-family: 'Alegreya Sans SC', sans-serif;
-
-		position: relative; 
-		top: 10px; 
-
-	}
-
-		#projectTitle{
-
-			height: 75px; 
-			width: 200px; 
-
-		}
-
-		#projectListContainer{
-
-			height: auto; 
-		}
-
-
-			.projectBoxContainer{
-
-				height: 160px !important;  
-				width: 100%;  
-				margin: 0 auto;
-				margin-bottom: 30px;
-			}
-
-				.projectBox{
-
-					height: 180px !important;  
-					width: 105%; 
-					margin: 0 auto;
-
-				}
-
-				.individualLayout{
-
-					height: 75%; 
-					width: 100%; 
-					position: relative; 
-					top: 25%;
-
-					background-color: #F4F5F6; 
-					border-radius: 6px; 
-
-					
-
-				}
-					.projectLogoDiv{
-
-						height: 51%; 
-						width: 25.5%; 
-						position: absolute;
-						z-index: 1000;
-						left: 10%;
-						border-radius: 3px;
-
-						background-color: none;
-
-					}
-
-								.projectLogoDiv.pythonLogo{
-
-									background-image: url(../images/projectLogos/pythonLogo); 
-									background-size: contain; 
-									background-repeat: no-repeat;
+									padding-right: 10px;
 
 								}
 
-								.projectLogoDiv.javaMysqlLogo{
+								/* Change default text color (blue) to white AND change font */
+								.menu-custom > li > a{
 
-									background-image: url(../images/projectLogos/java_mysql_logo.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
-
+									font-family: 'Courier New';
+									color: #D0D0D0  !important;
+									position: relative !important; 
+									top: 30px;
 								}
 
-								.projectLogoDiv.hadoopLogo{
-
-									background-image: url(../images/projectLogos/hadoopLogo.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
-
+								/*Override default background color on hover (make it any color, then set the opacity to zero*/
+								.navbar-inner .navbar-nav > li > a:hover, .navbar-inner .navbar-nav > li > a:focus {
+					   				background-color: transparent !important;
+					    			color: white !important;
 								}
 
-								.projectLogoDiv.goCodeLogo{ 
+									.withBorder{
 
-									background-image: url(../images/projectLogos/goCodeLogo.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
+										border: 2px solid white;
+										height: 60px; 
+										width: 120px; 
+										overflow: hidden; 
 
-								}
+									}
 
-								.projectLogoDiv.tipsyTravelsLogo{
+										.navbar-inner .navbar-nav > li > .withBorder:hover{
 
-									background-image: url(../images/projectLogos/tipsyTravelsLogo.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
+											background-color: white !important; 
+											color: black !important;
 
-								}
+										}
 
-								.projectLogoDiv.wagnerInternationalLogo{
+										.withBorder:after {
+											content: '';
+										    display: block;
+										    position: relative;
+										    width: 150px;
+										    height: 150px;
+											margin-top: -70px;
+											margin-left: -30px; 
+										    background: cyan;
+										    border-radius: 100%;
+										    opacity: .6;
+										    transform: scale(0);
+										}
 
-									background-image: url(../images/projectLogos/wagner-international-logo.jpg); 
-									background-size: contain; 
-									background-repeat: no-repeat;
+										@keyframes ripple {
+										  0% {
+										    transform: scale(0);
+										  }
+										  20% {
+										    transform: scale(1);
+										  }
+										  100% {
+										    opacity: 0;
+										    transform: scale(1);
+										  }
+										}
 
-								}
+										.withBorder:not(:active):after {
+										  animation: ripple 1s ease-out;
+										}
 
-								.projectLogoDiv.dot{
+										/* fixes initial animation run, without user input, on page load.
+										 */
+										.withBorder:after {
+										  visibility: hidden;
+										}
 
-									background-image: url(../images/projectLogos/dot.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
+										.withBorder:focus:after {
+										  visibility: visible;
+										} 
 
-								}
 
-								.projectLogoDiv.haptubLogo{
-
-									background-image: url(../images/projectLogos/haptubLogo.png); 
-									background-size: contain; 
-									background-repeat: no-repeat;
-
-								}
-
-					.projectTitle{
-
-						text-align: right; 
-						padding-right: 5px; 
-						margin: 0 auto; 
-						color: 	#383838 ;
-						font-size: 1.1em; 
-						font-weight: 900;
-						font-family: 'Raleway', sans-serif; 
-						position: relative; 
-						top: 5px; 
-						width: auto; 
-
-					}
-
-					.projectDescription{
-
-						padding: 0px 5px 0px 5px; 
-						font-family: 'Raleway', sans-serif;
-						color: 	#383838 ;
-						font-size: 0.9em; 
-						position: relative; 
-						text-align: center; 
-						white-space: pre-line;
-					}
-
-						.projectDescription > p {
-
-							padding: 0; 
-							margin: 0;
-							position: relative; 
-							top: -20px; 
-						}
-
-							.projectDescription > .longDescription {
-
-								font-size: 0.91em; 
-
+							/*The navbar is transparent so icon-bars are transparent. 
+							Display icon-bars*/
+							.navbar-toggle .icon-bar {
+							    display: block;
+							    width: 22px;
+							    height: 2px;
+							    border-radius: 1px;
+							    background-color: #ffffff;
 							}
 
 
 
-/*__________________________________________________________Contact SECTION */
-/*_________________________________________________________________________*/
+						#titleBanner{
+
+							position: relative; 
+							font-family: 'Alegreya Sans SC', sans-serif;
+							font-size: 4.7em;
+							font-weight: 500; 
+							letter-spacing: 9px;
+							top: 70px;
+							color: white; 
+							text-align: center; 
+
+						}
+
+						.increase-letter-size{
+
+							font-size: 1.4em;
+
+						}
+
+						.introBanner{
+
+							color: white; 
+							position: relative; 
+							font-family: 'Alegreya Sans SC', sans-serif;
+							top: 50px;
+							text-align: center; 
+							font-size: 1.2em;
+							letter-spacing: 3px;
+
+						}
+
+						#arrowButton{
+
+							height: 60px;
+							width: 60px; 
+							text-align: center; 
+							margin: 0 auto;
+							position: relative; 
+							top: 180px;
+							font-size: 3em;
 
 
-	#contactContainer{
+						}
+							#arrowButton > a {
+								color: #C0C0C0  ;
+							}
 
-		height: 75%;
-		width: 100%;
-		background-image: url(../images/mtHood.jpg);
-		background-size: cover; 
-		background-repeat: no-repeat;
-		max-width: 1920px; 
-		overflow: scroll;
-		background-position: center;
-		background-attachment: fixed; 
-
-	}
-
-		#blackOverlay{
-
-			height: 100%; 
+/*__________________________________________________________SECOND SECTION */
+/*________________________________________________________________________*/
+		
+		#profile{
+			
+			height: 90% !important; 
 			width: 100%; 
-			background-color: rgba(0,0,0,0.5); 
-
+			background-color: rgba(255,255,255, 0.86);
+			overflow: hidden; 
+			
 		}
 
-			#sayHi{
+				#portraitBanner{
 
-				width: 200px; 
-				color: white; 
-				font-size: 3em; 
-				font-family: 'Alegreya Sans SC', sans-serif;
-				font-weight: 300; 
-				letter-spacing: 5px; 
-				position: relative; 
-				top: 10px; 
-				left: 20px; 
+					position: relative; 
+					top: 55px; 
 
-			}
+				}
 
-			#twitterDivContainer{
+					#centerPositionContainer{
 
-				height: 100%;
-				width: 100%;
-				top: 20px;
-			}
-				#twitterDiv{
+						margin: 0 auto; 
+						height: 100px;
+						width: 300px;
+
+					}
+
+						#portrait{
+
+							height: 140px;
+							width: 149px; 
+							background-image: url(../img/portrait.png); 
+							background-size: contain; 
+							background-repeat: no-repeat;
+
+						}	
+
+							#mySignature{
+
+								height: 120px; 
+								width: 200px;
+								position: relative; 
+								background-image: url(../img/signature_min_black.png); 
+								background-size: cover; 
+								background-repeat: no-repeat;
+								top: 10px; 
+								left: 130px;
+
+							}
+
+
+				.hr_line { 
+					position: relative; 
+					top: 100px;
+			   		margin: 25px 0;
+			    	height: 1px;
+			    	background: black;
+			    	background: -webkit-gradient(linear, 0 0, 100% 0, from(#C8C8C8), to(#C8C8C8), color-stop(50%, black));
+				}
+
+				#cityBlocks{
+
+					position: relative; 
+					top: 120px; 
+
+				}
+					.thumbnail {
+		   				position:relative;
+		    			overflow:hidden;
+					}
+		 
+					.caption {
+					    position:absolute;
+					    top:0;
+					    right:0;
+					    background:rgba(0, 0, 0, 0.55);
+					    width:100%;
+					    height:100%;
+					    padding:2%;
+					    display: none;
+					    text-align: left;
+					    color:#fff !important;
+					    z-index:2;
+					}
+
+						.btn{
+							height: 100%; 
+							width: 100%; 
+						}
+
+							.cityName{
+								color: white; 
+								font-family: 'Alegreya Sans SC', sans-serif;
+								letter-spacing: 3px; 
+								position: relative; 
+								top: 110px; 
+								font-size: 1.3em;
+								font-weight: 600;
+							}
+
+								/*change default modal window position: center it*/
+								.modal-content {
+								   position: absolute;
+								   top: 70px;
+								   right: 100px;
+								   bottom: 0;
+								   left: 0;
+								   z-index: 10040;
+								   overflow: auto;
+								   overflow-y: auto;
+								}
+
+				#btmHorizantalDivider{
+
+					height: 5px !important;
+					top: 25px !important;  
+
+				}
+
+		
+/*__________________________________________________________THIRD SECTION */
+/*________________________________________________________________________*/
+		
+		#project{
+			
+			background-color: #2A2A2A; 
+			height: 95% !important; 
+			width: 100%;
+			text-align: center; 
+			font-size: 3em; 
+			color: white;
+			font-family: 'Alegreya Sans SC', sans-serif;
+			overflow: hidden; 
+
+			
+		}
+
+				#projectTitle{
+
+					height: 75px; 
+					width: 200px; 
+
+				}
+
+				#projectListContainer{
+
+					height: auto; 
+				}
+
+
+					.projectBoxContainer{
+
+						height: 160px !important;  
+						width: 100%;  
+						margin: 0 auto;
+						margin-bottom: 30px;
+					}
+
+						.projectBox{
+
+							height: 180px !important;  
+							width: 105%; 
+							margin: 0 auto;
+
+						}
+
+						.individualLayout{
+
+							height: 75%; 
+							width: 100%; 
+							position: relative; 
+							top: 25%;
+
+							background-color: #F4F5F6; 
+							border-radius: 6px; 
+
+							
+
+						}
+							.projectLogoDiv{
+
+								height: 51%; 
+								width: 25.5%; 
+								position: absolute;
+								z-index: 1000;
+								left: 10%;
+								border-radius: 3px;
+
+								background-color: none;
+
+							}
+
+										.projectLogoDiv.pythonLogo{
+
+											background-image: url(../img/projectLogos/pythonLogo); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.javaMysqlLogo{
+
+											background-image: url(../img/projectLogos/java_mysql_logo.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.hadoopLogo{
+
+											background-image: url(../img/projectLogos/hadoopLogo.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.goCodeLogo{ 
+
+											background-image: url(../img/projectLogos/goCodeLogo.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.tipsyTravelsLogo{
+
+											background-image: url(../img/projectLogos/tipsyTravelsLogo.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.wagnerInternationalLogo{
+
+											background-image: url(../img/projectLogos/wagner-international-logo.jpg); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.dot{
+
+											background-image: url(../img/projectLogos/dot.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+										.projectLogoDiv.haptubLogo{
+
+											background-image: url(../img/projectLogos/haptubLogo.png); 
+											background-size: contain; 
+											background-repeat: no-repeat;
+
+										}
+
+							.projectTitle{
+
+								text-align: right; 
+								padding-right: 5px; 
+								margin: 0 auto; 
+								color: 	#383838 ;
+								font-size: 1.1em; 
+								font-weight: 900;
+								font-family: 'Raleway', sans-serif; 
+								position: relative; 
+								top: 5px; 
+								width: auto; 
+
+							}
+
+							.projectDescription{
+
+								padding: 0px 5px 0px 5px; 
+								font-family: 'Raleway', sans-serif;
+								color: 	#383838 ;
+								font-size: 0.9em; 
+								position: relative; 
+								text-align: center; 
+								white-space: pre-line;
+							}
+
+								.projectDescription > p {
+
+									padding: 0; 
+									margin: 0;
+									position: relative; 
+									top: -20px; 
+								}
+
+									.projectDescription > .longDescription {
+
+										font-size: 0.91em; 
+
+									}
+
+/*__________________________________________________________FOURTH SECTION */
+/*________________________________________________________________________*/
+		
+		#contact{
+			
+			height: 80% !important; 
+			background-color: green;  
+			height: 75%;
+			width: 100%;
+			background-image: url(../img/mtHood.jpg);
+			background-size: cover; 
+			background-repeat: no-repeat;
+			max-width: 1920px; 
+			overflow: scroll;
+			background-position: center;
+			background-attachment: fixed; 
+			
+		}
+
+				#blackOverlay{
 
 					height: 100%; 
-					width: 500px;  
-					margin: 0 auto; 
+					width: 100%; 
+					background-color: rgba(0,0,0,0.5); 
 
 				}
 
-		#fontelloDiv{
+					#sayHi{
 
-			height: 100px; 
-			width: 400px;
-			margin: 0 auto;
+						width: 200px; 
+						color: white; 
+						font-size: 3em; 
+						font-family: 'Alegreya Sans SC', sans-serif;
+						font-weight: 300; 
+						letter-spacing: 5px; 
+						position: relative; 
+						top: 10px; 
+						left: 20px; 
 
-		}
+					}
 
-			.contactFontello{
+					#twitterDivContainer{
 
-					text-decoration: none; 
-					font-weight: bold; 
-					font-size: 5em;
-					float: left; 
+						height: 100%;
+						width: 100%;
+						top: 20px;
+					}
+						#twitterDiv{
+
+							height: 100%; 
+							width: 500px;  
+							margin: 0 auto; 
+
+						}
+
+				#fontelloDiv{
+
+					height: 100px; 
+					width: 400px;
+					margin: 0 auto;
 
 				}
 
-					#gitContact{
-						color: #F0F0F0 ;
-					}
+					.contactFontello{
 
-						#gitContact:hover{
-							color: #ee3e64;
+							text-decoration: none; 
+							font-weight: bold; 
+							font-size: 5em;
+							float: left; 
+
 						}
 
-					#linkdContact{
-						color: #F0F0F0 ;
-					}
-						
-						#linkdContact:hover{
-							color: #007AB9; 
-						}
+							#gitContact{
+								color: #F0F0F0 ;
+							}
 
-					#twitterContact{
-						color: #F0F0F0 ;
-					}
+								#gitContact:hover{
+									color: #ee3e64;
+								}
 
-						#twitterContact:hover{
-							color: #3cf; 
-						}
+							#linkdContact{
+								color: #F0F0F0 ;
+							}
+								
+								#linkdContact:hover{
+									color: #007AB9; 
+								}
 
-					#googleContact{
-						color: #F0F0F0  ;
-					}
+							#twitterContact{
+								color: #F0F0F0 ;
+							}
 
-						#googleContact:hover{
-							color: #D34836;
-						}
+								#twitterContact:hover{
+									color: #3cf; 
+								}
 
+							#googleContact{
+								color: #F0F0F0  ;
+							}
 
-
-
-} /*closing brace for @media screen and (max-width: 1440px)*/
-
-
-
-
-
-
+								#googleContact:hover{
+									color: #D34836;
+								}
 
 /*____________________________________________________________________ +++ MOBILE CSS  +++ _____________________________*/
 /*______________________________________________________________________________________________________________________*/
@@ -632,203 +639,206 @@ body,html{
 
 
 
-/*___________________________________________________MAIN SECTION MOBILE */
-/*________________________________________________________________________*/
+								/*___________________________________________________MAIN SECTION MOBILE */
+								/*________________________________________________________________________*/
 
-@media screen and (max-width: 568px) {
+								@media screen and (max-width: 568px) {
 
-	#londonBg {
-		height: 100%; 
-		width: 100%; 
-		background-image: url(../images/loneCloud.jpg) !important; 
-		background-size:100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		overflow: hidden; 
-		background-attachment: fixed; 
-		max-width: 1920px;
+									#londonBg {
+										
+										height: 100%; 
+										width: 100%; 
+										background-image: url(../img/loneCloud.jpg) !important; 
+										background-size:100%;
+										background-repeat: no-repeat;
+										background-position: center;
+										-webkit-background-size: cover;
+										-moz-background-size: cover;
+										-o-background-size: cover;
+										overflow: hidden; 
+										background-attachment: fixed; 
+										max-width: 1920px;
 
-	}
+									}
 
-		#overlay{
+										#overlay{
 
-			height: 100%; 
-			width: 100%; 
-			background-color: rgba(0,0,0,0.3);
-		}
+											height: 100%; 
+											width: 100%; 
+											background-color: rgba(0,0,0,0.3);
+											
+										}
 
-			#mainNavBar{
+											#mainNavBar{
 
-				height: 130px;
+												height: 130px;
 
-			}
+											}
 
-				#navContainer > li > a {
+												#navContainer > li > a {
 
-					padding-top: 0px;
-					padding-bottom: 5px; 
-					top: 0px;
-				}
+													padding-top: 0px;
+													padding-bottom: 5px; 
+													top: 0px;
+												}
 
 
-			#nameLogo{
+											#nameLogo{
 
-				height: 100px !important; 
-				width: 100px !important; 
+												height: 100px !important; 
+												width: 100px !important; 
 
-			}
+											}
 
-			    #titleBanner {
-			        font-size: 3.5em !important;
-			        letter-spacing: 7px;
-			    }
+											    #titleBanner {
+											        font-size: 3.5em !important;
+											        letter-spacing: 7px;
+											    }
 
-			    .introBanner{
+											    .introBanner{
 
-			    	font-size: 0.8em !important;
+											    	font-size: 0.8em !important;
 
-			    }
+											    }
 
-			    #arrowButton{
+											    #arrowButton{
 
-			    	top: 125px !important; 
+											    	top: 125px !important; 
 
-			    }
+											    }
 
-/*___________________________________________________ABOUT SECTION MOBILE */
-/*________________________________________________________________________*/
+								/*___________________________________________________ABOUT SECTION MOBILE */
+								/*________________________________________________________________________*/
 
- 	#indexContainer{
+								 	#profile{
 
- 		height: 115%;
- 	}
+								 		height: 115%;
+								 	}
 
- 		#portraitBanner{
+								 		#portraitBanner{
 
- 			top: 25px; 
- 			left: -70px;
- 		}
+								 			top: 25px; 
+								 			left: -70px;
+								 		}
 
- 			#portrait{
+								 			#portrait{
 
- 				height: 100px; 
- 				width: 100px; 
+								 				height: 100px; 
+								 				width: 100px; 
 
- 			}
+								 			}
 
- 			#mySignature{
+								 			#mySignature{
 
- 				left: 95px;
- 				top: -20px;
+								 				left: 95px;
+								 				top: -20px;
 
- 			}
+								 			}
 
 
- 		.hr_line{
+								 		.hr_line{
 
- 			top: 20px;
+								 			top: 20px;
 
- 		}
+								 		}
 
- 		#cityBlocks{
+								 		#cityBlocks{
 
- 			position: relative; 
- 			top: 15px;
+								 			position: relative; 
+								 			top: 15px;
 
- 		}
+								 		}
 
- 		.hr_line.bottom{
+								 		.hr_line.bottom{
 
- 			top: -10px;
+								 			top: -10px;
 
- 		}
+								 		}
 
-/*___________________________________________________PROJECT SECTION MOBILE */
-/*________________________________________________________________________*/
+								/*___________________________________________________PROJECT SECTION MOBILE */
+								/*________________________________________________________________________*/
 
-	#projectContainer{
+									#project{
 
-		height: 335%; 
+										height: 350% !important; 
 
-	}
+									}
 
-		.projectBox{
+										.projectBox{
 
-			height: 180px !important;  
-			width: 100%; 
-			margin: 0 auto;
+											width: 100%; 
+											margin: 0 auto;
 
-		}
+										}
 
-		
+										
 
-/*___________________________________________________CONTACT SECTION MOBILE */
-/*________________________________________________________________________*/
+								/*___________________________________________________CONTACT SECTION MOBILE */
+								/*________________________________________________________________________*/
 
-	#contactContainer{
+									#contact{
 
-		width: 100%;
-		height: 100%; 
-		background-image: url(../images/palmTree.jpg) !important; 
-		background-size:100%;
-		background-repeat: no-repeat;
-		background-position: center;
-		-webkit-background-size: cover;
-		-moz-background-size: cover;
-		-o-background-size: cover;
-		overflow: hidden; 
-		background-attachment: fixed; 
-		max-width: 1920px;
+										width: 100%;
+										height: 100%; 
+										background-image: url(../img/palmTree.jpg) !important; 
+										background-size:100%;
+										background-repeat: no-repeat;
+										background-position: center;
+										-webkit-background-size: cover;
+										-moz-background-size: cover;
+										-o-background-size: cover;
+										overflow: hidden; 
+										background-attachment: fixed; 
+										max-width: 1920px;
 
-	}
+									}
 
 
-	#contactPlaceholder{
+									#contactPlaceholder{
 
-		margin: 0 auto; 
+										margin: 0 auto; 
 
 
-	}
+									}
 
-		.contactFontello{
+										.contactFontello{
 
-			text-decoration: none; 
-			font-weight: bold; 
-			font-size: 3em;
-			float: left; 
+											text-decoration: none; 
+											font-weight: bold; 
+											font-size: 3em;
+											float: left; 
 
-		}
+										}
 
-	#twitterDiv{
+									#twitterDiv{
 
-		top: 25px;
-		height: 50px !important; 
-		width: 250px !important; 
-		position: relative;  
-		margin: 0 auto !important;
+										top: 25px;
+										height: 50px !important; 
+										width: 250px !important; 
+										position: relative;  
+										margin: 0 auto !important;
 
 
-	}
+									}
 
-	#fontelloContainer{
+									#fontelloContainer{
 
-		position: relative; 
-		top: 265px; 
+										position: relative; 
+										top: 265px; 
 
-	}
-		#fontelloDiv{
+									}
+										#fontelloDiv{
 
-			height: 50px; 
-			width: 258px; 
-			margin: 0 auto;
-			padding: 10px;
-		}
+											height: 50px; 
+											width: 258px; 
+											margin: 0 auto;
+											padding: 10px;
+										}
 
 
-} /*closing brace for @media screen and (max-width: 568px) */
+								} /*closing brace for @media screen and (max-width: 568px) */
 
 
 
+
+			

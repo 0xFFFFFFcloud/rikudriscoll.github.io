@@ -27,7 +27,7 @@
                         <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
                     </div>
                     <div class="collapse navbar-collapse" id="navcol-1">
-                        <p class="navbar-text navbar-right" style="margin-top:20px;"><a class="navbar-link login" href="#" style="color:rgb(217,215,215);">Résumé </a><a class="navbar-link login" href="#">Macro </a><a class="navbar-link login" href="#">Projects </a><a class="navbar-link login" href="#">Contact </a>
+                        <p class="navbar-text navbar-right" style="margin-top:20px;"><a class="navbar-link login" href="./assets/PDF/CV_2017.pdf" target="_blank" style="color:rgb(217,215,215);">Résumé </a><a class="navbar-link login" id="toMacroSection" href="#">Macro </a><a class="navbar-link login" id="toProjectSection" href="#">Projects </a><a class="navbar-link login" id="toContactSection" href="#">Contact </a>
                             <a
                             class="navbar-link login" href="#">Blog </a>
                         </p>
@@ -49,7 +49,7 @@
             </div>
         </div>
     </div>
-    <div data-bs-parallax-bg="true" style="height:500px;background-image:url('assets/img/doubledeck_small.jpg');background-position:center;background-size:cover;">
+    <div id="macroSection" data-bs-parallax-bg="true" style="height:500px;background-image:url('assets/img/doubledeck_small.jpg');background-position:center;background-size:cover;">
         <div class="container" style="padding:35px;">
             <div class="row">
                 <div class="col-md-12">
@@ -78,7 +78,7 @@
             </div>
         </div>
     </div>
-    <div class="projects-horizontal">
+    <div id="projectSection" class="projects-horizontal">
         <div class="container">
             <div class="intro">
                 <h2 class="text-center">P R O J E C T S</h2>
@@ -154,7 +154,7 @@
             </div>
         </div>
     </div>
-    <div class="footer-dark">
+    <div id="contactSection" class="footer-dark">
         <footer>
             <div class="container">
                 <div class="row">
@@ -173,10 +173,10 @@
                         <h3>About</h3>
                         <ul>
                             <li><a href="#">Blog </a></li>
-                            <li><a href="#">Github </a></li>
+                            <li><a href="http://github.com/rikudriscoll" target="_blank">Github </a></li>
                         </ul>
                     </div>
-                    <div class="col-md-12 col-sm-4 item social"><a href="#"><i class="icon ion-social-facebook"></i></a><a href="#"><i class="icon ion-social-twitter"></i></a><a href="#"><i class="icon ion-social-snapchat"></i></a><a href="#"><i class="icon ion-social-instagram"></i></a></div>
+                    <div class="col-md-12 col-sm-4 item social"><a href="http://www.facebook.com/riku.driscoll" target="_blank"><i class="icon ion-social-facebook"></i></a><a href="http://twitter.com/ku_503" target="_blank"><i class="icon ion-social-twitter"></i></a><a href="http://www.linkedin.com/in/rikudriscoll/" target="_blank"><i class="icon ion-social-linkedin"></i></a><a href="http://www.instagram.com/riku__ku/" target="_blank"><i class="icon ion-social-instagram"></i></a></div>
                 </div>
                 <p class="copyright">Cottonsteam</p>
             </div>
@@ -186,6 +186,25 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
+    
+    <script> 
+    	$("#toMacroSection").click(function() {
+    		$('html,body').animate({
+        		scrollTop: $("#macroSection").offset().top},'slow');
+		});
+		
+		$("#toProjectSection").click(function() {
+    		$('html,body').animate({
+        		scrollTop: $("#projectSection").offset().top},'slow');
+		});
+		
+		$("#toContactSection").click(function() {
+    		$('html,body').animate({
+        		scrollTop: $("#contactSection").offset().top},'slow');
+		});
+		
+    </script> 
+    
 </body>
 
 </html>
